@@ -445,16 +445,51 @@ let TABLE_LIMITS = {};
 async function loadData() {
   const r = await fetch('https://raw.githubusercontent.com/pressrpg/nbc.github.io/refs/heads/main/data.json');
   D = await r.json();
-  // Hydrate config from JSON
+
+  // ── FALLBACK DEFAULTS (used when JSON has no config section) ──
+  const FALLBACK_RACE_LABELS = {
+    'ny-gov': {state:'Nova York',   d_cand:'Cuomo',      r_cand:'Pataki',      table_limit:15},
+    'fl-gov': {state:'Flórida',     d_cand:'Chiles',     r_cand:'Bush',        table_limit:15},
+    'ca-gov': {state:'Califórnia',  d_cand:'Brown',      r_cand:'Wilson',      table_limit:15},
+    'co-gov': {state:'Colorado',    d_cand:'Romer',      r_cand:'Benson',      table_limit:15},
+    'ny-sen': {state:'Nova York',   d_cand:'Moynihan',   r_cand:'Castro',      table_limit:10},
+    'ca-sen': {state:'Califórnia',  d_cand:'Feinstein',  r_cand:'Huffington',  table_limit:10},
+    'fl-sen': {state:'Flórida',     d_cand:'Rodham',     r_cand:'Mack',        table_limit:10},
+    'co-sen': {state:'Colorado',    d_cand:'Warnock',    r_cand:'Perry',       table_limit:10},
+  };
+  const FALLBACK_GOV_STATES  = ['ny','fl','ca','co'];
+  const FALLBACK_STATE_NAMES = {ny:'Nova York', fl:'Flórida', ca:'Califórnia', co:'Colorado'};
+  const FALLBACK_STATE_FLAGS = {ny:'🗽', fl:'🌴', ca:'🌅', co:'🏔'};
+
   const cfg = D.config || {};
-  RACE_LABELS  = cfg.race_labels  || {};
-  GOV_STATES   = cfg.gov_states   || [];
-  STATE_NAMES  = cfg.state_names  || {};
-  STATE_FLAG   = cfg.state_flags  || {};
-  // TABLE_LIMITS derived from race_labels
+  RACE_LABELS = cfg.race_labels || FALLBACK_RACE_LABELS;
+  GOV_STATES  = cfg.gov_states  || FALLBACK_GOV_STATES;
+  STATE_NAMES = cfg.state_names || FALLBACK_STATE_NAMES;
+  STATE_FLAG  = cfg.state_flags || FALLBACK_STATE_FLAGS;
+
+  // Derive TABLE_LIMITS from race_labels
   TABLE_LIMITS = {};
   for (const [key, meta] of Object.entries(RACE_LABELS)) {
     TABLE_LIMITS[key] = meta.table_limit || 15;
+  }
+
+  // If a race has no label object, inject one from RACE_LABELS so renderers work
+  for (const [key, race] of Object.entries(D.races || {})) {
+    if (!race.label && RACE_LABELS[key]) race.label = RACE_LABELS[key];
+  }
+
+  // If senate.races is missing but races object has senate keys, build it
+  if (!D.senate) D.senate = { totals:{r:0,d:0}, races:[] };
+  if (!D.senate.races || D.senate.races.length === 0) {
+    D.senate.races = Object.entries(D.races || {})
+      .filter(([k]) => k.endsWith('-sen'))
+      .map(([k, race]) => ({
+        label: `${STATE_FLAG[k.slice(0,2)]||''} ${RACE_LABELS[k]?.state||k} — Senado EUA`,
+        state: RACE_LABELS[k]?.state || k,
+        race_key: k,
+        candidates: race.candidates || [],
+        county_results: race.county_results || []
+      }));
   }
 }
 
@@ -1141,7 +1176,7 @@ function renderCountdownCandidates() {
     let html = '';
     for (const race of D.senate.races) {
       html += `<div class="cd-state-block">
-        <div class="cd-state-name">${D.config.state_flags[race.race_key.split('-')[0]]||''} ${race.state}</div>`;
+        <div class="cd-state-name">${STATE_FLAG[race.race_key.split('-')[0]]||''} ${race.state}</div>`;
       for (const c of race.candidates) {
         html += `<div class="cd-cand">${partyIcon(c.party)} <span>${c.name.charAt(0)+c.name.slice(1).toLowerCase()}</span></div>`;
       }
@@ -1154,11 +1189,11 @@ function renderCountdownCandidates() {
   const govEl = document.getElementById('cd-gov-list');
   if (govEl) {
     let html = '';
-    for (const code of (D.config.gov_states||[])) {
+    for (const code of (GOV_STATES)) {
       const race = D.races[code+'-gov'];
       if (!race) continue;
       html += `<div class="cd-state-block">
-        <div class="cd-state-name">${D.config.state_flags[code]||''} ${D.config.state_names[code]||code}</div>`;
+        <div class="cd-state-name">${STATE_FLAG[code]||''} ${STATE_NAMES[code]||code}</div>`;
       for (const c of race.candidates) {
         html += `<div class="cd-cand">${partyIcon(c.party)} <span>${c.name.charAt(0)+c.name.slice(1).toLowerCase()}</span></div>`;
       }
