@@ -1,0 +1,4836 @@
+{
+  "meta": {
+    "year": 1994,
+    "date": "8 de novembro de 1994",
+    "title": "NBC News | Decision 1994",
+    "subtitle": "A Revolução Republicana"
+  },
+  "home": {
+    "hero": {
+      "badge": "⚡ ELEIÇÕES DE MEIO DE MANDATO • 1994",
+      "title": "A Revolução Republicana: GOP varre o Congresso e governadorias",
+      "sub": "Os republicanos ganham 54 cadeiras na Câmara e 8 no Senado, assumindo o controle das duas casas pelo primeira vez desde 1952. \"Contract with America\" de Newt Gingrich consolida vitória histórica."
+    },
+    "cards": [
+      {
+        "label": "🗳 Governador — Nova York",
+        "title": "George Pataki (R) derrota Mario Cuomo (D) em grande surpresa",
+        "pills": [
+          {
+            "text": "✔ Pataki 49,0%",
+            "party": "r"
+          }
+        ]
+      },
+      {
+        "label": "🗳 Governador — Flórida",
+        "title": "Lawton Chiles (D) vence Jeb Bush por margem mínima",
+        "pills": [
+          {
+            "text": "✔ Chiles 50,8%",
+            "party": "d"
+          }
+        ]
+      },
+      {
+        "label": "🗳 Governador — Califórnia",
+        "title": "Pete Wilson (R) esmaga Kathleen Brown (D) com 14 pontos",
+        "pills": [
+          {
+            "text": "✔ Wilson 55,2%",
+            "party": "r"
+          }
+        ]
+      },
+      {
+        "label": "🗳 Governador — Colorado",
+        "title": "Roy Romer (D) conquista terceiro mandato com folga",
+        "pills": [
+          {
+            "text": "✔ Romer 55,5%",
+            "party": "d"
+          }
+        ]
+      }
+    ],
+    "senate_quick": [
+      {
+        "state": "Nova York",
+        "candidates": [
+          {
+            "name": "Daniel P. Moynihan",
+            "party": "d",
+            "pct": 65.1,
+            "winner": true
+          },
+          {
+            "name": "Bernadette Castro",
+            "party": "r",
+            "pct": 31.2,
+            "winner": false
+          }
+        ]
+      },
+      {
+        "state": "Califórnia",
+        "candidates": [
+          {
+            "name": "Dianne Feinstein",
+            "party": "d",
+            "pct": 47.0,
+            "winner": true
+          },
+          {
+            "name": "Michael Huffington",
+            "party": "r",
+            "pct": 44.8,
+            "winner": false
+          }
+        ]
+      },
+      {
+        "state": "Flórida",
+        "candidates": [
+          {
+            "name": "Connie Mack",
+            "party": "r",
+            "pct": 70.5,
+            "winner": true
+          },
+          {
+            "name": "Hugh Rodham",
+            "party": "d",
+            "pct": 29.5,
+            "winner": false
+          }
+        ]
+      }
+    ]
+  },
+  "sidebar_news": [
+    {
+      "tag": "⚡ URGENTE",
+      "title": "Newt Gingrich eleito presidente da Câmara com histórica maioria republicana",
+      "time": "2 min atrás"
+    },
+    {
+      "tag": "ANÁLISE",
+      "title": "Clinton admite \"surra\" após derrota eleitoral histórica para o partido democrata",
+      "time": "8 min atrás"
+    },
+    {
+      "tag": "GOVERNADORES",
+      "title": "Republicanos ganham 11 cadeiras de governador; governos de NY e Texas mudam de mãos",
+      "time": "15 min atrás"
+    },
+    {
+      "tag": "SENADO",
+      "title": "GOP toma controle do Senado: 53 cadeiras projetadas para os republicanos",
+      "time": "22 min atrás"
+    },
+    {
+      "tag": "CÂMARA",
+      "title": "\"Contract with America\": 54 cadeiras ganhas pelo GOP — maior vaga desde 1946",
+      "time": "31 min atrás"
+    }
+  ],
+  "races": {
+    "ny-gov": {
+      "type": "governor",
+      "state": "NY",
+      "headline": "Resultados das eleições para governador de Nova York em 1994",
+      "description": "George Pataki (R) derrota o governador de três mandatos Mario Cuomo (D) em uma das maiores surpresas da noite. 100% dos votos esperados computados.",
+      "pct_reported": 100,
+      "total_votes": 5193480,
+      "candidates": [
+        {
+          "name": "GEORGE PATAKI",
+          "party": "r",
+          "pct": 49.0,
+          "votes": 2538702,
+          "winner": true
+        },
+        {
+          "name": "MARIO CUOMO",
+          "party": "d",
+          "pct": 45.4,
+          "votes": 2364904,
+          "winner": false
+        }
+      ],
+      "map": {
+        "viewBox": "",
+        "counties": [
+          {
+            "x": 10,
+            "y": 140,
+            "w": 55,
+            "h": 45,
+            "name": "Erie",
+            "party": "d",
+            "dark": false
+          },
+          {
+            "x": 10,
+            "y": 185,
+            "w": 55,
+            "h": 35,
+            "name": "Chautauqua",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 65,
+            "y": 185,
+            "w": 45,
+            "h": 35,
+            "name": "Cattaraugus",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 65,
+            "y": 140,
+            "w": 45,
+            "h": 45,
+            "name": "Allegany",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 110,
+            "y": 185,
+            "w": 45,
+            "h": 35,
+            "name": "Steuben",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 110,
+            "y": 140,
+            "w": 45,
+            "h": 45,
+            "name": "Livingston",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 110,
+            "y": 105,
+            "w": 60,
+            "h": 35,
+            "name": "Monroe",
+            "party": "r",
+            "dark": true
+          },
+          {
+            "x": 170,
+            "y": 105,
+            "w": 40,
+            "h": 35,
+            "name": "Wayne",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 210,
+            "y": 105,
+            "w": 50,
+            "h": 35,
+            "name": "Onondaga",
+            "party": "r",
+            "dark": true
+          },
+          {
+            "x": 155,
+            "y": 140,
+            "w": 50,
+            "h": 45,
+            "name": "Cayuga",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 205,
+            "y": 140,
+            "w": 55,
+            "h": 45,
+            "name": "Cortland",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 260,
+            "y": 105,
+            "w": 50,
+            "h": 35,
+            "name": "Madison",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 260,
+            "y": 140,
+            "w": 50,
+            "h": 45,
+            "name": "Chenango",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 350,
+            "y": 105,
+            "w": 50,
+            "h": 45,
+            "name": "Albany",
+            "party": "d",
+            "dark": false
+          },
+          {
+            "x": 310,
+            "y": 105,
+            "w": 40,
+            "h": 45,
+            "name": "Schenectady",
+            "party": "d",
+            "dark": false
+          },
+          {
+            "x": 400,
+            "y": 60,
+            "w": 40,
+            "h": 45,
+            "name": "Washington",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 350,
+            "y": 60,
+            "w": 50,
+            "h": 45,
+            "name": "Saratoga",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 400,
+            "y": 105,
+            "w": 40,
+            "h": 45,
+            "name": "Rensselaer",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 310,
+            "y": 15,
+            "w": 90,
+            "h": 45,
+            "name": "St. Lawrence",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 260,
+            "y": 60,
+            "w": 50,
+            "h": 45,
+            "name": "Oneida",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 310,
+            "y": 60,
+            "w": 40,
+            "h": 45,
+            "name": "Hamilton",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 200,
+            "y": 60,
+            "w": 60,
+            "h": 45,
+            "name": "Herkimer",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 150,
+            "y": 60,
+            "w": 50,
+            "h": 45,
+            "name": "Oswego",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 100,
+            "y": 60,
+            "w": 50,
+            "h": 45,
+            "name": "Jefferson",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 100,
+            "y": 15,
+            "w": 50,
+            "h": 45,
+            "name": "Lewis",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 150,
+            "y": 15,
+            "w": 60,
+            "h": 45,
+            "name": "Franklin",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 210,
+            "y": 15,
+            "w": 50,
+            "h": 45,
+            "name": "Clinton",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 260,
+            "y": 15,
+            "w": 50,
+            "h": 45,
+            "name": "Essex",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 400,
+            "y": 150,
+            "w": 40,
+            "h": 40,
+            "name": "Columbia",
+            "party": "r",
+            "dark": true
+          },
+          {
+            "x": 440,
+            "y": 150,
+            "w": 40,
+            "h": 40,
+            "name": "Dutchess",
+            "party": "r",
+            "dark": true
+          },
+          {
+            "x": 440,
+            "y": 190,
+            "w": 35,
+            "h": 35,
+            "name": "Putnam",
+            "party": "r",
+            "dark": true
+          },
+          {
+            "x": 475,
+            "y": 190,
+            "w": 35,
+            "h": 30,
+            "name": "Westchester",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 440,
+            "y": 255,
+            "w": 40,
+            "h": 30,
+            "name": "Nassau",
+            "party": "r",
+            "dark": true
+          },
+          {
+            "x": 480,
+            "y": 255,
+            "w": 30,
+            "h": 30,
+            "name": "Suffolk",
+            "party": "r",
+            "dark": true
+          },
+          {
+            "x": 440,
+            "y": 220,
+            "w": 40,
+            "h": 35,
+            "name": "NYC",
+            "party": "d",
+            "dark": true
+          },
+          {
+            "x": 350,
+            "y": 150,
+            "w": 50,
+            "h": 40,
+            "name": "Ulster",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 350,
+            "y": 190,
+            "w": 50,
+            "h": 35,
+            "name": "Sullivan",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 400,
+            "y": 190,
+            "w": 40,
+            "h": 35,
+            "name": "Orange",
+            "party": "r",
+            "dark": true
+          },
+          {
+            "x": 400,
+            "y": 225,
+            "w": 40,
+            "h": 30,
+            "name": "Rockland",
+            "party": "d",
+            "dark": false
+          },
+          {
+            "x": 310,
+            "y": 150,
+            "w": 40,
+            "h": 40,
+            "name": "Greene",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 310,
+            "y": 190,
+            "w": 40,
+            "h": 35,
+            "name": "Delaware",
+            "party": "r",
+            "dark": false
+          }
+        ],
+        "legend": [
+          {
+            "party": "r",
+            "label": "Pataki (R)"
+          },
+          {
+            "party": "d",
+            "label": "Cuomo (D)"
+          }
+        ]
+      },
+      "exit_polls": [
+        {
+          "group": "GÊNERO",
+          "rows": [
+            {
+              "label": "Masculino (48%)",
+              "d": 40,
+              "r": 55
+            },
+            {
+              "label": "Feminino (52%)",
+              "d": 51,
+              "r": 44
+            }
+          ]
+        },
+        {
+          "group": "RAÇA",
+          "rows": [
+            {
+              "label": "Brancos (80%)",
+              "d": 42,
+              "r": 55
+            },
+            {
+              "label": "Negros (11%)",
+              "d": 87,
+              "r": 12
+            },
+            {
+              "label": "Latinos (6%)",
+              "d": 70,
+              "r": 29
+            }
+          ]
+        },
+        {
+          "group": "AVALIAÇÃO DE CLINTON",
+          "rows": [
+            {
+              "label": "Aprova (44%)",
+              "d": 82,
+              "r": 17
+            },
+            {
+              "label": "Desaprova (54%)",
+              "d": 17,
+              "r": 82
+            }
+          ]
+        }
+      ],
+      "county_results": [
+        {
+          "name": "Bronx",
+          "d": 82.8,
+          "r": 14.6,
+          "o": 2.6,
+          "votes": 247312,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Kings (Brooklyn)",
+          "d": 77.4,
+          "r": 20.2,
+          "o": 2.4,
+          "votes": 380218,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "New York (Manhattan)",
+          "d": 81.2,
+          "r": 16.8,
+          "o": 2,
+          "votes": 289441,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Queens",
+          "d": 63.5,
+          "r": 33.8,
+          "o": 2.7,
+          "votes": 318764,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Richmond (Staten Island)",
+          "d": 44.2,
+          "r": 52.3,
+          "o": 3.5,
+          "votes": 102847,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Nassau",
+          "d": 33.2,
+          "r": 63.7,
+          "o": 3.1,
+          "votes": 376541,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Suffolk",
+          "d": 30.5,
+          "r": 66.8,
+          "o": 2.7,
+          "votes": 342198,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Westchester",
+          "d": 42.9,
+          "r": 54.6,
+          "o": 2.5,
+          "votes": 198432,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Monroe",
+          "d": 41.6,
+          "r": 55.8,
+          "o": 2.6,
+          "votes": 202314,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Erie",
+          "d": 52.3,
+          "r": 44.2,
+          "o": 3.5,
+          "votes": 256891,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Onondaga",
+          "d": 40.1,
+          "r": 57.2,
+          "o": 2.7,
+          "votes": 141872,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Albany",
+          "d": 57.8,
+          "r": 39.6,
+          "o": 2.6,
+          "votes": 136541,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Dutchess",
+          "d": 36.2,
+          "r": 61.4,
+          "o": 2.4,
+          "votes": 89124,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Orange",
+          "d": 38.4,
+          "r": 58.9,
+          "o": 2.7,
+          "votes": 98234,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Rockland",
+          "d": 51.2,
+          "r": 46.3,
+          "o": 2.5,
+          "votes": 72841,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Putnam",
+          "d": 32.4,
+          "r": 65.2,
+          "o": 2.4,
+          "votes": 38745,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Saratoga",
+          "d": 38.7,
+          "r": 58.6,
+          "o": 2.7,
+          "votes": 78234,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Rensselaer",
+          "d": 44.2,
+          "r": 52.8,
+          "o": 3,
+          "votes": 62145,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Schenectady",
+          "d": 52.1,
+          "r": 44.7,
+          "o": 3.2,
+          "votes": 64712,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Ulster",
+          "d": 46.8,
+          "r": 50.4,
+          "o": 2.8,
+          "votes": 67234,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Sullivan",
+          "d": 44.1,
+          "r": 52.7,
+          "o": 3.2,
+          "votes": 28941,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Delaware",
+          "d": 38.2,
+          "r": 59.1,
+          "o": 2.7,
+          "votes": 22341,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Columbia",
+          "d": 42.1,
+          "r": 55.4,
+          "o": 2.5,
+          "votes": 29812,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Greene",
+          "d": 40.2,
+          "r": 57.1,
+          "o": 2.7,
+          "votes": 19872,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Chenango",
+          "d": 36.4,
+          "r": 61.2,
+          "o": 2.4,
+          "votes": 21341,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Otsego",
+          "d": 38.7,
+          "r": 58.6,
+          "o": 2.7,
+          "votes": 25412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Madison",
+          "d": 41.2,
+          "r": 56.4,
+          "o": 2.4,
+          "votes": 29871,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Oneida",
+          "d": 43.8,
+          "r": 53.2,
+          "o": 3,
+          "votes": 72341,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Herkimer",
+          "d": 40.1,
+          "r": 57.2,
+          "o": 2.7,
+          "votes": 28712,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Jefferson",
+          "d": 44.2,
+          "r": 52.8,
+          "o": 3,
+          "votes": 41234,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Oswego",
+          "d": 45.1,
+          "r": 52.1,
+          "o": 2.8,
+          "votes": 42781,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Cayuga",
+          "d": 46.2,
+          "r": 51.3,
+          "o": 2.5,
+          "votes": 36712,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Seneca",
+          "d": 47.1,
+          "r": 50.2,
+          "o": 2.7,
+          "votes": 16234,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Wayne",
+          "d": 38.4,
+          "r": 58.9,
+          "o": 2.7,
+          "votes": 38712,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Ontario",
+          "d": 36.7,
+          "r": 60.8,
+          "o": 2.5,
+          "votes": 42341,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Livingston",
+          "d": 37.2,
+          "r": 60.1,
+          "o": 2.7,
+          "votes": 28712,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Steuben",
+          "d": 34.1,
+          "r": 63.2,
+          "o": 2.7,
+          "votes": 38412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Allegany",
+          "d": 32.4,
+          "r": 65.2,
+          "o": 2.4,
+          "votes": 22341,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Cattaraugus",
+          "d": 36.7,
+          "r": 61.2,
+          "o": 2.1,
+          "votes": 32812,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Chautauqua",
+          "d": 43.2,
+          "r": 53.7,
+          "o": 3.1,
+          "votes": 58712,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Niagara",
+          "d": 48.2,
+          "r": 49.3,
+          "o": 2.5,
+          "votes": 68412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Orleans",
+          "d": 35.2,
+          "r": 62.1,
+          "o": 2.7,
+          "votes": 17812,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Genesee",
+          "d": 36.8,
+          "r": 60.5,
+          "o": 2.7,
+          "votes": 28341,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Wyoming",
+          "d": 33.2,
+          "r": 64.1,
+          "o": 2.7,
+          "votes": 17234,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "St. Lawrence",
+          "d": 47.2,
+          "r": 49.8,
+          "o": 3,
+          "votes": 38712,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Franklin",
+          "d": 51.2,
+          "r": 46.3,
+          "o": 2.5,
+          "votes": 19341,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Clinton",
+          "d": 52.4,
+          "r": 44.8,
+          "o": 2.8,
+          "votes": 31712,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Essex",
+          "d": 44.2,
+          "r": 53.1,
+          "o": 2.7,
+          "votes": 16812,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Hamilton",
+          "d": 32.1,
+          "r": 65.4,
+          "o": 2.5,
+          "votes": 4812,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Fulton",
+          "d": 41.2,
+          "r": 55.7,
+          "o": 3.1,
+          "votes": 22341,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Montgomery",
+          "d": 46.2,
+          "r": 51.3,
+          "o": 2.5,
+          "votes": 22812,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Schoharie",
+          "d": 37.4,
+          "r": 59.8,
+          "o": 2.8,
+          "votes": 14712,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Warren",
+          "d": 38.7,
+          "r": 58.4,
+          "o": 2.9,
+          "votes": 28412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Washington",
+          "d": 41.2,
+          "r": 56.2,
+          "o": 2.6,
+          "votes": 24812,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Yates",
+          "d": 34.7,
+          "r": 62.1,
+          "o": 3.2,
+          "votes": 11234,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Schuyler",
+          "d": 38.1,
+          "r": 59.4,
+          "o": 2.5,
+          "votes": 9812,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Cortland",
+          "d": 44.2,
+          "r": 53.1,
+          "o": 2.7,
+          "votes": 22341,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Tioga",
+          "d": 36.4,
+          "r": 61.2,
+          "o": 2.4,
+          "votes": 22812,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Broome",
+          "d": 44.7,
+          "r": 52.6,
+          "o": 2.7,
+          "votes": 78412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Chemung",
+          "d": 42.1,
+          "r": 55.2,
+          "o": 2.7,
+          "votes": 38712,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Tompkins",
+          "d": 62.4,
+          "r": 34.7,
+          "o": 2.9,
+          "votes": 36812,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Chenango",
+          "d": 38.2,
+          "r": 59.1,
+          "o": 2.7,
+          "votes": 22341,
+          "pct": 100,
+          "winner": "r"
+        }
+      ],
+      "label": {
+        "state": "Nova York",
+        "d_cand": "Cuomo",
+        "r_cand": "Pataki",
+        "table_limit": 15
+      }
+    },
+    "fl-gov": {
+      "type": "governor",
+      "state": "FL",
+      "headline": "Resultados das eleições para governador da Flórida em 1994",
+      "description": "Lawton Chiles (D) derrota Jeb Bush (R) por margem apertadíssima de 1,6 pontos percentuais. Bush, filho do ex-presidente George H.W. Bush, perde em sua primeira candidatura à governadoria.",
+      "pct_reported": 100,
+      "total_votes": 4205966,
+      "candidates": [
+        {
+          "name": "LAWTON CHILES",
+          "party": "d",
+          "pct": 50.8,
+          "votes": 2135008,
+          "winner": true
+        },
+        {
+          "name": "JEB BUSH",
+          "party": "r",
+          "pct": 49.2,
+          "votes": 2071068,
+          "winner": false
+        }
+      ],
+      "map": {
+        "viewBox": "",
+        "counties": [
+          {
+            "x": 10,
+            "y": 10,
+            "w": 55,
+            "h": 30,
+            "name": "Escambia",
+            "party": "r",
+            "dark": true
+          },
+          {
+            "x": 65,
+            "y": 10,
+            "w": 35,
+            "h": 30,
+            "name": "Santa Rosa",
+            "party": "r",
+            "dark": true
+          },
+          {
+            "x": 100,
+            "y": 10,
+            "w": 35,
+            "h": 30,
+            "name": "Okaloosa",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 135,
+            "y": 10,
+            "w": 35,
+            "h": 30,
+            "name": "Walton",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 170,
+            "y": 10,
+            "w": 35,
+            "h": 30,
+            "name": "Bay",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 205,
+            "y": 10,
+            "w": 35,
+            "h": 30,
+            "name": "Jackson",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 240,
+            "y": 10,
+            "w": 35,
+            "h": 30,
+            "name": "Gadsden",
+            "party": "d",
+            "dark": false
+          },
+          {
+            "x": 275,
+            "y": 10,
+            "w": 45,
+            "h": 30,
+            "name": "Leon",
+            "party": "d",
+            "dark": false
+          },
+          {
+            "x": 10,
+            "y": 40,
+            "w": 55,
+            "h": 30,
+            "name": "Holmes/Wash.",
+            "party": "d",
+            "dark": false
+          },
+          {
+            "x": 275,
+            "y": 40,
+            "w": 45,
+            "h": 30,
+            "name": "Jefferson",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 320,
+            "y": 10,
+            "w": 50,
+            "h": 60,
+            "name": "Duval",
+            "party": "r",
+            "dark": true
+          },
+          {
+            "x": 370,
+            "y": 10,
+            "w": 35,
+            "h": 30,
+            "name": "Nassau",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 205,
+            "y": 70,
+            "w": 50,
+            "h": 35,
+            "name": "Alachua",
+            "party": "d",
+            "dark": false
+          },
+          {
+            "x": 255,
+            "y": 70,
+            "w": 45,
+            "h": 35,
+            "name": "Putnam",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 300,
+            "y": 70,
+            "w": 50,
+            "h": 35,
+            "name": "St. Johns",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 155,
+            "y": 105,
+            "w": 55,
+            "h": 35,
+            "name": "Marion",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 210,
+            "y": 105,
+            "w": 55,
+            "h": 35,
+            "name": "Volusia",
+            "party": "d",
+            "dark": false
+          },
+          {
+            "x": 265,
+            "y": 105,
+            "w": 55,
+            "h": 35,
+            "name": "Flagler",
+            "party": "d",
+            "dark": false
+          },
+          {
+            "x": 100,
+            "y": 140,
+            "w": 60,
+            "h": 35,
+            "name": "Hillsborough",
+            "party": "d",
+            "dark": false
+          },
+          {
+            "x": 55,
+            "y": 140,
+            "w": 45,
+            "h": 35,
+            "name": "Pinellas",
+            "party": "d",
+            "dark": false
+          },
+          {
+            "x": 160,
+            "y": 140,
+            "w": 55,
+            "h": 35,
+            "name": "Polk",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 215,
+            "y": 140,
+            "w": 55,
+            "h": 35,
+            "name": "Orange",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 270,
+            "y": 140,
+            "w": 45,
+            "h": 35,
+            "name": "Brevard",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 55,
+            "y": 175,
+            "w": 45,
+            "h": 35,
+            "name": "Manatee",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 55,
+            "y": 210,
+            "w": 45,
+            "h": 35,
+            "name": "Sarasota",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 55,
+            "y": 245,
+            "w": 45,
+            "h": 35,
+            "name": "Charlotte",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 55,
+            "y": 280,
+            "w": 45,
+            "h": 35,
+            "name": "Lee",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 100,
+            "y": 280,
+            "w": 60,
+            "h": 35,
+            "name": "Collier",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 310,
+            "y": 210,
+            "w": 60,
+            "h": 35,
+            "name": "Palm Beach",
+            "party": "d",
+            "dark": true
+          },
+          {
+            "x": 310,
+            "y": 245,
+            "w": 60,
+            "h": 35,
+            "name": "Broward",
+            "party": "d",
+            "dark": true
+          },
+          {
+            "x": 310,
+            "y": 280,
+            "w": 60,
+            "h": 35,
+            "name": "Miami-Dade",
+            "party": "d",
+            "dark": false
+          }
+        ],
+        "legend": [
+          {
+            "party": "r",
+            "label": "Bush (R)"
+          },
+          {
+            "party": "d",
+            "label": "Chiles (D)"
+          }
+        ]
+      },
+      "exit_polls": [],
+      "county_results": [
+        {
+          "name": "Miami-Dade",
+          "dem": 52.8,
+          "rep": 47.2,
+          "votes": 489214,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Broward",
+          "dem": 63.4,
+          "rep": 36.6,
+          "votes": 298741,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Palm Beach",
+          "dem": 58.2,
+          "rep": 41.8,
+          "votes": 241832,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Orange",
+          "dem": 48.3,
+          "rep": 51.7,
+          "votes": 198412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Hillsborough",
+          "dem": 49.1,
+          "rep": 50.9,
+          "votes": 247832,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Pinellas",
+          "dem": 51.4,
+          "rep": 48.6,
+          "votes": 241712,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Duval",
+          "dem": 41.3,
+          "rep": 58.7,
+          "votes": 198512,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Polk",
+          "dem": 51.7,
+          "rep": 48.3,
+          "votes": 112341,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Brevard",
+          "dem": 43.2,
+          "rep": 56.8,
+          "votes": 128412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Lee",
+          "dem": 37.6,
+          "rep": 62.4,
+          "votes": 98712,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Volusia",
+          "dem": 53.1,
+          "rep": 46.9,
+          "votes": 118341,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Sarasota",
+          "dem": 44.7,
+          "rep": 55.3,
+          "votes": 108712,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Pasco",
+          "dem": 47.8,
+          "rep": 52.2,
+          "votes": 78412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Manatee",
+          "dem": 42.1,
+          "rep": 57.9,
+          "votes": 78234,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Collier",
+          "dem": 31.4,
+          "rep": 68.6,
+          "votes": 68412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Charlotte",
+          "dem": 41.2,
+          "rep": 58.8,
+          "votes": 52341,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "St. Lucie",
+          "dem": 56.4,
+          "rep": 43.6,
+          "votes": 58712,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Marion",
+          "dem": 46.8,
+          "rep": 53.2,
+          "votes": 68312,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Alachua",
+          "dem": 59.2,
+          "rep": 40.8,
+          "votes": 68412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Osceola",
+          "dem": 50.2,
+          "rep": 49.8,
+          "votes": 38412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Seminole",
+          "dem": 38.4,
+          "rep": 61.6,
+          "votes": 98712,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Lake",
+          "dem": 40.1,
+          "rep": 59.9,
+          "votes": 68412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Indian River",
+          "dem": 40.8,
+          "rep": 59.2,
+          "votes": 48234,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Martin",
+          "dem": 38.7,
+          "rep": 61.3,
+          "votes": 42341,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "St. Johns",
+          "dem": 32.4,
+          "rep": 67.6,
+          "votes": 42812,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Leon",
+          "dem": 64.2,
+          "rep": 35.8,
+          "votes": 78412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Escambia",
+          "dem": 41.2,
+          "rep": 58.8,
+          "votes": 78234,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Okaloosa",
+          "dem": 24.7,
+          "rep": 75.3,
+          "votes": 58712,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Bay",
+          "dem": 32.1,
+          "rep": 67.9,
+          "votes": 48312,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Santa Rosa",
+          "dem": 28.4,
+          "rep": 71.6,
+          "votes": 38712,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Citrus",
+          "dem": 48.2,
+          "rep": 51.8,
+          "votes": 38412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Flagler",
+          "dem": 54.7,
+          "rep": 45.3,
+          "votes": 18412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Hendry",
+          "dem": 58.4,
+          "rep": 41.6,
+          "votes": 9812,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Highlands",
+          "dem": 48.7,
+          "rep": 51.3,
+          "votes": 28412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Hardee",
+          "dem": 54.2,
+          "rep": 45.8,
+          "votes": 8812,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "DeSoto",
+          "dem": 57.4,
+          "rep": 42.6,
+          "votes": 8412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Glades",
+          "dem": 60.2,
+          "rep": 39.8,
+          "votes": 3412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Okeechobee",
+          "dem": 54.8,
+          "rep": 45.2,
+          "votes": 9812,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Gadsden",
+          "dem": 76.2,
+          "rep": 23.8,
+          "votes": 18412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Jackson",
+          "dem": 55.4,
+          "rep": 44.6,
+          "votes": 18712,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Wakulla",
+          "dem": 60.1,
+          "rep": 39.9,
+          "votes": 8812,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Jefferson",
+          "dem": 64.2,
+          "rep": 35.8,
+          "votes": 5412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Madison",
+          "dem": 62.4,
+          "rep": 37.6,
+          "votes": 7812,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Hamilton",
+          "dem": 65.2,
+          "rep": 34.8,
+          "votes": 5412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Suwannee",
+          "dem": 52.4,
+          "rep": 47.6,
+          "votes": 12812,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Columbia",
+          "dem": 52.1,
+          "rep": 47.9,
+          "votes": 18412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Baker",
+          "dem": 54.7,
+          "rep": 45.3,
+          "votes": 7812,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Nassau",
+          "dem": 38.4,
+          "rep": 61.6,
+          "votes": 22412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Putnam",
+          "dem": 56.8,
+          "rep": 43.2,
+          "votes": 18412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Clay",
+          "dem": 28.4,
+          "rep": 71.6,
+          "votes": 38412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Bradford",
+          "dem": 56.4,
+          "rep": 43.6,
+          "votes": 8412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Union",
+          "dem": 58.2,
+          "rep": 41.8,
+          "votes": 3812,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Gilchrist",
+          "dem": 54.7,
+          "rep": 45.3,
+          "votes": 6812,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Levy",
+          "dem": 55.2,
+          "rep": 44.8,
+          "votes": 12812,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Dixie",
+          "dem": 58.4,
+          "rep": 41.6,
+          "votes": 5812,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Taylor",
+          "dem": 57.4,
+          "rep": 42.6,
+          "votes": 8412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Lafayette",
+          "dem": 62.4,
+          "rep": 37.6,
+          "votes": 3412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Holmes",
+          "dem": 47.2,
+          "rep": 52.8,
+          "votes": 8812,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Washington",
+          "dem": 48.2,
+          "rep": 51.8,
+          "votes": 9412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Calhoun",
+          "dem": 57.4,
+          "rep": 42.6,
+          "votes": 5412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Gulf",
+          "dem": 50.1,
+          "rep": 49.9,
+          "votes": 7812,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Franklin",
+          "dem": 58.2,
+          "rep": 41.8,
+          "votes": 5412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Liberty",
+          "dem": 65.4,
+          "rep": 34.6,
+          "votes": 2812,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Walton",
+          "dem": 38.2,
+          "rep": 61.8,
+          "votes": 18412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Monroe",
+          "dem": 54.2,
+          "rep": 45.8,
+          "votes": 22412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Hernando",
+          "dem": 47.4,
+          "rep": 52.6,
+          "votes": 38412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Sumter",
+          "dem": 50.2,
+          "rep": 49.8,
+          "votes": 12412,
+          "pct": 100,
+          "winner": "d"
+        }
+      ],
+      "label": {
+        "state": "Flórida",
+        "d_cand": "Chiles",
+        "r_cand": "Bush",
+        "table_limit": 15
+      }
+    },
+    "ca-gov": {
+      "type": "governor",
+      "state": "CA",
+      "headline": "Resultados das eleições para governador da Califórnia em 1994",
+      "description": "Pete Wilson (R) vence Kathleen Brown (D) por 14,6 pontos percentuais, conquistando segundo mandato com apoio à Proposição 187 que limitava serviços a imigrantes ilegais.",
+      "pct_reported": 100,
+      "total_votes": 8660000,
+      "candidates": [
+        {
+          "name": "PETE WILSON",
+          "party": "r",
+          "pct": 55.2,
+          "votes": 4781799,
+          "winner": true
+        },
+        {
+          "name": "KATHLEEN BROWN",
+          "party": "d",
+          "pct": 40.6,
+          "votes": 3519799,
+          "winner": false
+        }
+      ],
+      "map": {},
+      "exit_polls": [],
+      "county_results": [
+        {
+          "name": "Los Angeles",
+          "r": 42.4,
+          "d": 54.8,
+          "o": 2.8,
+          "votes": 2198412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "San Diego",
+          "r": 62.3,
+          "d": 34.8,
+          "o": 2.9,
+          "votes": 698412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Orange",
+          "r": 72.8,
+          "d": 24.7,
+          "o": 2.5,
+          "votes": 548412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Riverside",
+          "r": 63.2,
+          "d": 33.9,
+          "o": 2.9,
+          "votes": 298412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "San Bernardino",
+          "r": 61.4,
+          "d": 35.8,
+          "o": 2.8,
+          "votes": 348412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Santa Clara",
+          "r": 45.4,
+          "d": 51.7,
+          "o": 2.9,
+          "votes": 448412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Alameda",
+          "r": 31.4,
+          "d": 66.2,
+          "o": 2.4,
+          "votes": 348412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Sacramento",
+          "r": 54.7,
+          "d": 42.8,
+          "o": 2.5,
+          "votes": 298412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Contra Costa",
+          "r": 54.3,
+          "d": 42.9,
+          "o": 2.8,
+          "votes": 248412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Fresno",
+          "r": 60.2,
+          "d": 37.3,
+          "o": 2.5,
+          "votes": 148412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "San Francisco",
+          "r": 23.8,
+          "d": 73.4,
+          "o": 2.8,
+          "votes": 198412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Kern",
+          "r": 66.8,
+          "d": 31.2,
+          "o": 2,
+          "votes": 148412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Ventura",
+          "r": 62.4,
+          "d": 35.1,
+          "o": 2.5,
+          "votes": 178412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "San Mateo",
+          "r": 44.2,
+          "d": 53.1,
+          "o": 2.7,
+          "votes": 148412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Stanislaus",
+          "r": 60.4,
+          "d": 37.2,
+          "o": 2.4,
+          "votes": 98412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "San Joaquin",
+          "r": 58.2,
+          "d": 39.4,
+          "o": 2.4,
+          "votes": 98412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Sonoma",
+          "r": 44.7,
+          "d": 52.4,
+          "o": 2.9,
+          "votes": 98412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Tulare",
+          "r": 66.4,
+          "d": 31.2,
+          "o": 2.4,
+          "votes": 78412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Santa Barbara",
+          "r": 57.2,
+          "d": 40.1,
+          "o": 2.7,
+          "votes": 78412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Solano",
+          "r": 52.4,
+          "d": 45.1,
+          "o": 2.5,
+          "votes": 78412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Monterey",
+          "r": 48.2,
+          "d": 49.4,
+          "o": 2.4,
+          "votes": 78412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Marin",
+          "r": 31.4,
+          "d": 66.2,
+          "o": 2.4,
+          "votes": 68412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Merced",
+          "r": 58.4,
+          "d": 39.2,
+          "o": 2.4,
+          "votes": 48412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Butte",
+          "r": 62.4,
+          "d": 35.1,
+          "o": 2.5,
+          "votes": 58412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Shasta",
+          "r": 70.2,
+          "d": 27.4,
+          "o": 2.4,
+          "votes": 48412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Kings",
+          "r": 64.2,
+          "d": 33.4,
+          "o": 2.4,
+          "votes": 28412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Madera",
+          "r": 64.7,
+          "d": 32.8,
+          "o": 2.5,
+          "votes": 28412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Napa",
+          "r": 50.4,
+          "d": 47.2,
+          "o": 2.4,
+          "votes": 38412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "El Dorado",
+          "r": 67.4,
+          "d": 30.2,
+          "o": 2.4,
+          "votes": 48412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "San Luis Obispo",
+          "r": 60.2,
+          "d": 37.4,
+          "o": 2.4,
+          "votes": 68412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Yolo",
+          "r": 44.2,
+          "d": 53.4,
+          "o": 2.4,
+          "votes": 48412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Imperial",
+          "r": 46.4,
+          "d": 51.2,
+          "o": 2.4,
+          "votes": 28412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Nevada",
+          "r": 64.2,
+          "d": 33.4,
+          "o": 2.4,
+          "votes": 28412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Santa Cruz",
+          "r": 33.4,
+          "d": 63.8,
+          "o": 2.8,
+          "votes": 58412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Mendocino",
+          "r": 40.2,
+          "d": 57.4,
+          "o": 2.4,
+          "votes": 28412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Placer",
+          "r": 70.4,
+          "d": 27.2,
+          "o": 2.4,
+          "votes": 68412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Lake",
+          "r": 50.4,
+          "d": 46.8,
+          "o": 2.8,
+          "votes": 18412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Humboldt",
+          "r": 46.2,
+          "d": 51.4,
+          "o": 2.4,
+          "votes": 38412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Sutter",
+          "r": 66.4,
+          "d": 31.2,
+          "o": 2.4,
+          "votes": 18412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Tehama",
+          "r": 70.2,
+          "d": 27.4,
+          "o": 2.4,
+          "votes": 18412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "San Benito",
+          "r": 52.4,
+          "d": 45.2,
+          "o": 2.4,
+          "votes": 10412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Calaveras",
+          "r": 65.4,
+          "d": 32.2,
+          "o": 2.4,
+          "votes": 14412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Amador",
+          "r": 66.4,
+          "d": 31.2,
+          "o": 2.4,
+          "votes": 12412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Glenn",
+          "r": 69.4,
+          "d": 28.2,
+          "o": 2.4,
+          "votes": 8412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Mariposa",
+          "r": 63.4,
+          "d": 34.2,
+          "o": 2.4,
+          "votes": 7412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Lassen",
+          "r": 71.4,
+          "d": 26.2,
+          "o": 2.4,
+          "votes": 8412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Colusa",
+          "r": 65.4,
+          "d": 32.2,
+          "o": 2.4,
+          "votes": 6412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Del Norte",
+          "r": 59.4,
+          "d": 38.2,
+          "o": 2.4,
+          "votes": 6412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Plumas",
+          "r": 60.4,
+          "d": 37.2,
+          "o": 2.4,
+          "votes": 7412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Tuolumne",
+          "r": 63.4,
+          "d": 34.2,
+          "o": 2.4,
+          "votes": 14412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Yuba",
+          "r": 63.4,
+          "d": 34.2,
+          "o": 2.4,
+          "votes": 12412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Mono",
+          "r": 60.4,
+          "d": 37.2,
+          "o": 2.4,
+          "votes": 4412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Inyo",
+          "r": 62.4,
+          "d": 35.2,
+          "o": 2.4,
+          "votes": 5412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Siskiyou",
+          "r": 62.4,
+          "d": 35.2,
+          "o": 2.4,
+          "votes": 16412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Modoc",
+          "r": 70.4,
+          "d": 27.2,
+          "o": 2.4,
+          "votes": 3412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Trinity",
+          "r": 55.4,
+          "d": 42.2,
+          "o": 2.4,
+          "votes": 4412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Sierra",
+          "r": 60.4,
+          "d": 37.2,
+          "o": 2.4,
+          "votes": 1812,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Alpine",
+          "r": 52.4,
+          "d": 45.2,
+          "o": 2.4,
+          "votes": 812,
+          "pct": 100,
+          "winner": "r"
+        }
+      ],
+      "label": {
+        "state": "Califórnia",
+        "d_cand": "Brown",
+        "r_cand": "Wilson",
+        "table_limit": 15
+      }
+    },
+    "co-gov": {
+      "type": "governor",
+      "state": "CO",
+      "headline": "Resultados das eleições para governador do Colorado em 1994",
+      "description": "Roy Romer (D) conquista seu terceiro mandato consecutivo como governador com margem confortável de 15 pontos, resistindo à maré republicana nacional.",
+      "pct_reported": 100,
+      "total_votes": 1116041,
+      "candidates": [
+        {
+          "name": "ROY ROMER",
+          "party": "d",
+          "pct": 55.5,
+          "votes": 619205,
+          "winner": true
+        },
+        {
+          "name": "BRUCE BENSON",
+          "party": "r",
+          "pct": 40.1,
+          "votes": 447748,
+          "winner": false
+        }
+      ],
+      "map": {
+        "viewBox": "",
+        "counties": [
+          {
+            "x": 10,
+            "y": 10,
+            "w": 45,
+            "h": 40,
+            "name": "Moffat",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 55,
+            "y": 10,
+            "w": 40,
+            "h": 40,
+            "name": "Routt",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 95,
+            "y": 10,
+            "w": 40,
+            "h": 40,
+            "name": "Jackson",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 135,
+            "y": 10,
+            "w": 45,
+            "h": 40,
+            "name": "Larimer",
+            "party": "d",
+            "dark": false
+          },
+          {
+            "x": 180,
+            "y": 10,
+            "w": 45,
+            "h": 40,
+            "name": "Weld",
+            "party": "r",
+            "dark": true
+          },
+          {
+            "x": 225,
+            "y": 10,
+            "w": 45,
+            "h": 40,
+            "name": "Logan",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 270,
+            "y": 10,
+            "w": 40,
+            "h": 40,
+            "name": "Sedgwick",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 310,
+            "y": 10,
+            "w": 40,
+            "h": 40,
+            "name": "Phillips",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 350,
+            "y": 10,
+            "w": 40,
+            "h": 40,
+            "name": "Yuma",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 10,
+            "y": 50,
+            "w": 45,
+            "h": 40,
+            "name": "Rio Blanco",
+            "party": "r",
+            "dark": true
+          },
+          {
+            "x": 55,
+            "y": 50,
+            "w": 40,
+            "h": 40,
+            "name": "Garfield",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 95,
+            "y": 50,
+            "w": 40,
+            "h": 40,
+            "name": "Eagle",
+            "party": "d",
+            "dark": false
+          },
+          {
+            "x": 135,
+            "y": 50,
+            "w": 45,
+            "h": 40,
+            "name": "Boulder",
+            "party": "d",
+            "dark": true
+          },
+          {
+            "x": 180,
+            "y": 50,
+            "w": 45,
+            "h": 40,
+            "name": "Jefferson",
+            "party": "r",
+            "dark": true
+          },
+          {
+            "x": 225,
+            "y": 50,
+            "w": 45,
+            "h": 40,
+            "name": "Denver",
+            "party": "d",
+            "dark": true
+          },
+          {
+            "x": 270,
+            "y": 50,
+            "w": 40,
+            "h": 40,
+            "name": "Arapahoe",
+            "party": "r",
+            "dark": true
+          },
+          {
+            "x": 310,
+            "y": 50,
+            "w": 40,
+            "h": 40,
+            "name": "Elbert",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 350,
+            "y": 50,
+            "w": 40,
+            "h": 40,
+            "name": "Lincoln",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 10,
+            "y": 90,
+            "w": 45,
+            "h": 40,
+            "name": "Mesa",
+            "party": "r",
+            "dark": true
+          },
+          {
+            "x": 55,
+            "y": 90,
+            "w": 40,
+            "h": 40,
+            "name": "Delta",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 95,
+            "y": 90,
+            "w": 40,
+            "h": 40,
+            "name": "Pitkin",
+            "party": "d",
+            "dark": false
+          },
+          {
+            "x": 135,
+            "y": 90,
+            "w": 45,
+            "h": 40,
+            "name": "Park",
+            "party": "r",
+            "dark": true
+          },
+          {
+            "x": 180,
+            "y": 90,
+            "w": 45,
+            "h": 40,
+            "name": "Douglas",
+            "party": "r",
+            "dark": true
+          },
+          {
+            "x": 225,
+            "y": 90,
+            "w": 45,
+            "h": 40,
+            "name": "El Paso",
+            "party": "r",
+            "dark": true
+          },
+          {
+            "x": 270,
+            "y": 90,
+            "w": 40,
+            "h": 40,
+            "name": "Pueblo",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 310,
+            "y": 90,
+            "w": 40,
+            "h": 40,
+            "name": "Huerfano",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 350,
+            "y": 90,
+            "w": 40,
+            "h": 40,
+            "name": "Las Animas",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 10,
+            "y": 130,
+            "w": 45,
+            "h": 40,
+            "name": "Montrose",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 55,
+            "y": 130,
+            "w": 40,
+            "h": 40,
+            "name": "Gunnison",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 95,
+            "y": 130,
+            "w": 40,
+            "h": 40,
+            "name": "Saguache",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 135,
+            "y": 130,
+            "w": 45,
+            "h": 40,
+            "name": "Fremont",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 180,
+            "y": 130,
+            "w": 170,
+            "h": 40,
+            "name": "Baca / Otero / Bent / Crowley / Kiowa / Cheyenne",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 10,
+            "y": 170,
+            "w": 45,
+            "h": 40,
+            "name": "San Miguel",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 55,
+            "y": 170,
+            "w": 40,
+            "h": 40,
+            "name": "Dolores",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 95,
+            "y": 170,
+            "w": 40,
+            "h": 40,
+            "name": "Montezuma",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 135,
+            "y": 170,
+            "w": 45,
+            "h": 40,
+            "name": "La Plata",
+            "party": "r",
+            "dark": false
+          },
+          {
+            "x": 180,
+            "y": 170,
+            "w": 50,
+            "h": 40,
+            "name": "Archuleta",
+            "party": "d",
+            "dark": false
+          },
+          {
+            "x": 230,
+            "y": 170,
+            "w": 50,
+            "h": 40,
+            "name": "Mineral",
+            "party": "d",
+            "dark": false
+          }
+        ],
+        "legend": [
+          {
+            "party": "r",
+            "label": "Benson (R)"
+          },
+          {
+            "party": "d",
+            "label": "Romer (D)"
+          }
+        ]
+      },
+      "exit_polls": [],
+      "county_results": [
+        {
+          "name": "Denver",
+          "d": 68.7,
+          "r": 27.4,
+          "i": 3.9,
+          "votes": 149872,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Jefferson",
+          "d": 43.8,
+          "r": 52.3,
+          "i": 3.9,
+          "votes": 128412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Arapahoe",
+          "d": 40.8,
+          "r": 55.4,
+          "i": 3.8,
+          "votes": 118712,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Adams",
+          "d": 52.8,
+          "r": 43.6,
+          "i": 3.6,
+          "votes": 78412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "El Paso",
+          "d": 30.7,
+          "r": 65.2,
+          "i": 4.1,
+          "votes": 98412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Boulder",
+          "d": 61.8,
+          "r": 34.6,
+          "i": 3.6,
+          "votes": 78412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Larimer",
+          "d": 43.2,
+          "r": 52.1,
+          "i": 4.7,
+          "votes": 68412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Douglas",
+          "d": 24.8,
+          "r": 72.3,
+          "i": 2.9,
+          "votes": 48412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Weld",
+          "d": 35.8,
+          "r": 60.4,
+          "i": 3.8,
+          "votes": 48412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Pueblo",
+          "d": 65.4,
+          "r": 31.2,
+          "i": 3.4,
+          "votes": 38412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Mesa",
+          "d": 28.4,
+          "r": 68.2,
+          "i": 3.4,
+          "votes": 38412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Broomfield",
+          "d": 46.8,
+          "r": 49.4,
+          "i": 3.8,
+          "votes": 18412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Garfield",
+          "d": 38.2,
+          "r": 57.4,
+          "i": 4.4,
+          "votes": 18412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Fremont",
+          "d": 41.2,
+          "r": 54.8,
+          "i": 4,
+          "votes": 18412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Eagle",
+          "d": 54.2,
+          "r": 42.4,
+          "i": 3.4,
+          "votes": 14412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Montrose",
+          "d": 34.2,
+          "r": 62.4,
+          "i": 3.4,
+          "votes": 16412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "La Plata",
+          "d": 54.8,
+          "r": 41.8,
+          "i": 3.4,
+          "votes": 22412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Teller",
+          "d": 32.4,
+          "r": 64.2,
+          "i": 3.4,
+          "votes": 12412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Pitkin",
+          "d": 67.4,
+          "r": 29.8,
+          "i": 2.8,
+          "votes": 9412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Montezuma",
+          "d": 44.2,
+          "r": 52.4,
+          "i": 3.4,
+          "votes": 12412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Delta",
+          "d": 38.2,
+          "r": 58.4,
+          "i": 3.4,
+          "votes": 12412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Rio Blanco",
+          "d": 30.4,
+          "r": 66.2,
+          "i": 3.4,
+          "votes": 6412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Moffat",
+          "d": 32.4,
+          "r": 64.2,
+          "i": 3.4,
+          "votes": 7412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Routt",
+          "d": 46.2,
+          "r": 50.4,
+          "i": 3.4,
+          "votes": 8412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Gunnison",
+          "d": 48.2,
+          "r": 48.4,
+          "i": 3.4,
+          "votes": 7412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Park",
+          "d": 38.2,
+          "r": 58.4,
+          "i": 3.4,
+          "votes": 6412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Chaffee",
+          "d": 52.4,
+          "r": 44.2,
+          "i": 3.4,
+          "votes": 7412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Summit",
+          "d": 57.4,
+          "r": 39.2,
+          "i": 3.4,
+          "votes": 8412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Grand",
+          "d": 44.2,
+          "r": 52.4,
+          "i": 3.4,
+          "votes": 6412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "San Miguel",
+          "d": 58.4,
+          "r": 38.2,
+          "i": 3.4,
+          "votes": 4412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Dolores",
+          "d": 38.2,
+          "r": 58.4,
+          "i": 3.4,
+          "votes": 2412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Archuleta",
+          "d": 54.2,
+          "r": 42.4,
+          "i": 3.4,
+          "votes": 6412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Otero",
+          "d": 54.2,
+          "r": 42.4,
+          "i": 3.4,
+          "votes": 8412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Logan",
+          "d": 42.4,
+          "r": 54.2,
+          "i": 3.4,
+          "votes": 8412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Weld",
+          "d": 35.8,
+          "r": 60.4,
+          "i": 3.8,
+          "votes": 48412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Las Animas",
+          "d": 60.4,
+          "r": 36.2,
+          "i": 3.4,
+          "votes": 8412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Huerfano",
+          "d": 60.4,
+          "r": 36.2,
+          "i": 3.4,
+          "votes": 4412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Costilla",
+          "d": 68.4,
+          "r": 28.2,
+          "i": 3.4,
+          "votes": 2412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Alamosa",
+          "d": 60.4,
+          "r": 36.2,
+          "i": 3.4,
+          "votes": 7412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Rio Grande",
+          "d": 54.4,
+          "r": 42.2,
+          "i": 3.4,
+          "votes": 6412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Saguache",
+          "d": 60.4,
+          "r": 36.2,
+          "i": 3.4,
+          "votes": 4412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Conejos",
+          "d": 64.4,
+          "r": 32.2,
+          "i": 3.4,
+          "votes": 4412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Mineral",
+          "d": 56.4,
+          "r": 40.2,
+          "i": 3.4,
+          "votes": 812,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Hinsdale",
+          "d": 42.4,
+          "r": 54.2,
+          "i": 3.4,
+          "votes": 612,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Ouray",
+          "d": 50.4,
+          "r": 46.2,
+          "i": 3.4,
+          "votes": 2412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "San Juan",
+          "d": 58.4,
+          "r": 38.2,
+          "i": 3.4,
+          "votes": 412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Gilpin",
+          "d": 52.4,
+          "r": 44.2,
+          "i": 3.4,
+          "votes": 2412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Clear Creek",
+          "d": 52.4,
+          "r": 44.2,
+          "i": 3.4,
+          "votes": 4412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Jackson",
+          "d": 36.4,
+          "r": 60.2,
+          "i": 3.4,
+          "votes": 812,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Sedgwick",
+          "d": 38.4,
+          "r": 58.2,
+          "i": 3.4,
+          "votes": 1412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Phillips",
+          "d": 34.4,
+          "r": 62.2,
+          "i": 3.4,
+          "votes": 1812,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Yuma",
+          "d": 34.4,
+          "r": 62.2,
+          "i": 3.4,
+          "votes": 4412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Kit Carson",
+          "d": 36.4,
+          "r": 60.2,
+          "i": 3.4,
+          "votes": 3412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Lincoln",
+          "d": 36.4,
+          "r": 60.2,
+          "i": 3.4,
+          "votes": 2412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Cheyenne",
+          "d": 34.4,
+          "r": 62.2,
+          "i": 3.4,
+          "votes": 1412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Elbert",
+          "d": 34.4,
+          "r": 62.2,
+          "i": 3.4,
+          "votes": 8412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Baca",
+          "d": 44.4,
+          "r": 52.2,
+          "i": 3.4,
+          "votes": 2412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Prowers",
+          "d": 46.4,
+          "r": 50.2,
+          "i": 3.4,
+          "votes": 5412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Crowley",
+          "d": 50.4,
+          "r": 46.2,
+          "i": 3.4,
+          "votes": 2412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Bent",
+          "d": 54.4,
+          "r": 42.2,
+          "i": 3.4,
+          "votes": 3412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Kiowa",
+          "d": 40.4,
+          "r": 56.2,
+          "i": 3.4,
+          "votes": 1412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Morgan",
+          "d": 44.4,
+          "r": 52.2,
+          "i": 3.4,
+          "votes": 10412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Washington",
+          "d": 36.4,
+          "r": 60.2,
+          "i": 3.4,
+          "votes": 3412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Custer",
+          "d": 40.4,
+          "r": 56.2,
+          "i": 3.4,
+          "votes": 2412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Lake",
+          "d": 56.4,
+          "r": 40.2,
+          "i": 3.4,
+          "votes": 4412,
+          "pct": 100,
+          "winner": "d"
+        }
+      ],
+      "label": {
+        "state": "Colorado",
+        "d_cand": "Romer",
+        "r_cand": "Benson",
+        "table_limit": 15
+      }
+    },
+    "ny-sen": {
+      "county_results": [
+        {
+          "name": "Bronx",
+          "d": 88.4,
+          "r": 9.8,
+          "o": 1.8,
+          "votes": 212341,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Kings (Brooklyn)",
+          "d": 84.2,
+          "r": 13.6,
+          "o": 2.2,
+          "votes": 348712,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "New York (Manhattan)",
+          "d": 87.4,
+          "r": 11.2,
+          "o": 1.4,
+          "votes": 276412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Queens",
+          "d": 72.4,
+          "r": 25.4,
+          "o": 2.2,
+          "votes": 298412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Richmond (Staten Island)",
+          "d": 52.4,
+          "r": 44.8,
+          "o": 2.8,
+          "votes": 98412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Nassau",
+          "d": 44.2,
+          "r": 53.4,
+          "o": 2.4,
+          "votes": 342712,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Suffolk",
+          "d": 40.4,
+          "r": 57.2,
+          "o": 2.4,
+          "votes": 312412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Westchester",
+          "d": 57.4,
+          "r": 40.2,
+          "o": 2.4,
+          "votes": 188412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Monroe",
+          "d": 56.4,
+          "r": 41.2,
+          "o": 2.4,
+          "votes": 192412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Erie",
+          "d": 63.4,
+          "r": 34.2,
+          "o": 2.4,
+          "votes": 242712,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Onondaga",
+          "d": 55.4,
+          "r": 42.2,
+          "o": 2.4,
+          "votes": 132412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Albany",
+          "d": 66.8,
+          "r": 31.2,
+          "o": 2,
+          "votes": 128412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Dutchess",
+          "d": 49.4,
+          "r": 48.2,
+          "o": 2.4,
+          "votes": 84412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Orange",
+          "d": 51.4,
+          "r": 46.2,
+          "o": 2.4,
+          "votes": 92412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Rockland",
+          "d": 60.4,
+          "r": 37.2,
+          "o": 2.4,
+          "votes": 68412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Saratoga",
+          "d": 52.4,
+          "r": 45.2,
+          "o": 2.4,
+          "votes": 74412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Rensselaer",
+          "d": 56.4,
+          "r": 41.2,
+          "o": 2.4,
+          "votes": 58412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Schenectady",
+          "d": 62.4,
+          "r": 35.2,
+          "o": 2.4,
+          "votes": 60412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Tompkins",
+          "d": 74.4,
+          "r": 23.2,
+          "o": 2.4,
+          "votes": 34412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Broome",
+          "d": 55.4,
+          "r": 42.2,
+          "o": 2.4,
+          "votes": 74412,
+          "pct": 100,
+          "winner": "d"
+        }
+      ],
+      "label": {
+        "state": "Nova York",
+        "d_cand": "Moynihan",
+        "r_cand": "Castro",
+        "table_limit": 10
+      }
+    },
+    "ca-sen": {
+      "county_results": [
+        {
+          "name": "Los Angeles",
+          "d": 52.4,
+          "r": 43.2,
+          "o": 4.4,
+          "votes": 2088412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "San Diego",
+          "d": 38.4,
+          "r": 56.2,
+          "o": 5.4,
+          "votes": 664412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Orange",
+          "d": 29.4,
+          "r": 66.2,
+          "o": 4.4,
+          "votes": 522412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Riverside",
+          "d": 38.4,
+          "r": 57.2,
+          "o": 4.4,
+          "votes": 284412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "San Bernardino",
+          "d": 40.4,
+          "r": 55.2,
+          "o": 4.4,
+          "votes": 332412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Santa Clara",
+          "d": 56.4,
+          "r": 40.2,
+          "o": 3.4,
+          "votes": 428412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Alameda",
+          "d": 70.4,
+          "r": 26.2,
+          "o": 3.4,
+          "votes": 332412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Sacramento",
+          "d": 47.4,
+          "r": 48.2,
+          "o": 4.4,
+          "votes": 284412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Contra Costa",
+          "d": 50.4,
+          "r": 46.2,
+          "o": 3.4,
+          "votes": 236412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "San Francisco",
+          "d": 76.4,
+          "r": 20.2,
+          "o": 3.4,
+          "votes": 188412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Fresno",
+          "d": 40.4,
+          "r": 55.2,
+          "o": 4.4,
+          "votes": 140412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Kern",
+          "d": 34.4,
+          "r": 61.2,
+          "o": 4.4,
+          "votes": 140412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Ventura",
+          "d": 40.4,
+          "r": 55.2,
+          "o": 4.4,
+          "votes": 168412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "San Mateo",
+          "d": 57.4,
+          "r": 39.2,
+          "o": 3.4,
+          "votes": 140412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Marin",
+          "d": 70.4,
+          "r": 26.2,
+          "o": 3.4,
+          "votes": 64412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Santa Cruz",
+          "d": 67.4,
+          "r": 29.2,
+          "o": 3.4,
+          "votes": 54412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Sonoma",
+          "d": 57.4,
+          "r": 39.2,
+          "o": 3.4,
+          "votes": 92412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Yolo",
+          "d": 57.4,
+          "r": 39.2,
+          "o": 3.4,
+          "votes": 46412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Placer",
+          "d": 34.4,
+          "r": 61.2,
+          "o": 4.4,
+          "votes": 64412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "El Dorado",
+          "d": 38.4,
+          "r": 57.2,
+          "o": 4.4,
+          "votes": 44412,
+          "pct": 100,
+          "winner": "r"
+        }
+      ],
+      "label": {
+        "state": "Califórnia",
+        "d_cand": "Feinstein",
+        "r_cand": "Huffington",
+        "table_limit": 10
+      }
+    },
+    "fl-sen": {
+      "county_results": [
+        {
+          "name": "Miami-Dade",
+          "r": 56.4,
+          "d": 43.6,
+          "votes": 466412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Broward",
+          "r": 46.4,
+          "d": 53.6,
+          "votes": 284412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Palm Beach",
+          "r": 52.4,
+          "d": 47.6,
+          "votes": 230412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Orange",
+          "r": 66.4,
+          "d": 33.6,
+          "votes": 188412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Hillsborough",
+          "r": 64.4,
+          "d": 35.6,
+          "votes": 236412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Pinellas",
+          "r": 64.4,
+          "d": 35.6,
+          "votes": 230412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Duval",
+          "r": 77.4,
+          "d": 22.6,
+          "votes": 188412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Polk",
+          "r": 65.4,
+          "d": 34.6,
+          "votes": 106412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Brevard",
+          "r": 72.4,
+          "d": 27.6,
+          "votes": 122412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Lee",
+          "r": 75.4,
+          "d": 24.6,
+          "votes": 92412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Volusia",
+          "r": 62.4,
+          "d": 37.6,
+          "votes": 112412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Sarasota",
+          "r": 71.4,
+          "d": 28.6,
+          "votes": 102412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Leon",
+          "r": 44.4,
+          "d": 55.6,
+          "votes": 74412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Escambia",
+          "r": 72.4,
+          "d": 27.6,
+          "votes": 74412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Okaloosa",
+          "r": 86.4,
+          "d": 13.6,
+          "votes": 54412,
+          "pct": 100,
+          "winner": "r"
+        },
+        {
+          "name": "Alachua",
+          "r": 44.4,
+          "d": 55.6,
+          "votes": 64412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "Gadsden",
+          "r": 26.4,
+          "d": 73.6,
+          "votes": 17412,
+          "pct": 100,
+          "winner": "d"
+        },
+        {
+          "name": "St. Johns",
+          "r": 78.4,
+          "d": 21.6,
+          "votes": 40412,
+          "pct": 100,
+          "winner": "r"
+        }
+      ],
+      "label": {
+        "state": "Flórida",
+        "d_cand": "Rodham",
+        "r_cand": "Mack",
+        "table_limit": 10
+      }
+    }
+  },
+  "senate": {
+    "totals": {
+      "r": 53,
+      "d": 47
+    },
+    "races": [
+      {
+        "label": "🗽 Nova York — Senado EUA (Classe 3) 100% apurado",
+        "state": "Nova York",
+        "race_key": "ny-sen",
+        "candidates": [
+          {
+            "name": "DANIEL P. MOYNIHAN",
+            "party": "d",
+            "pct": 65.1,
+            "votes": 3338714,
+            "winner": true
+          },
+          {
+            "name": "BERNADETTE CASTRO",
+            "party": "r",
+            "pct": 31.2,
+            "votes": 1599846,
+            "winner": false
+          }
+        ],
+        "county_results": [
+          {
+            "name": "Bronx",
+            "d": 88.4,
+            "r": 9.8,
+            "o": 1.8,
+            "votes": 212341,
+            "pct": 100,
+            "winner": "d"
+          },
+          {
+            "name": "Kings (Brooklyn)",
+            "d": 84.2,
+            "r": 13.6,
+            "o": 2.2,
+            "votes": 348712,
+            "pct": 100,
+            "winner": "d"
+          },
+          {
+            "name": "New York (Manhattan)",
+            "d": 87.4,
+            "r": 11.2,
+            "o": 1.4,
+            "votes": 276412,
+            "pct": 100,
+            "winner": "d"
+          },
+          {
+            "name": "Queens",
+            "d": 72.4,
+            "r": 25.4,
+            "o": 2.2,
+            "votes": 298412,
+            "pct": 100,
+            "winner": "d"
+          },
+          {
+            "name": "Richmond (Staten Island)",
+            "d": 52.4,
+            "r": 44.8,
+            "o": 2.8,
+            "votes": 98412,
+            "pct": 100,
+            "winner": "d"
+          },
+          {
+            "name": "Nassau",
+            "d": 44.2,
+            "r": 53.4,
+            "o": 2.4,
+            "votes": 342712,
+            "pct": 100,
+            "winner": "r"
+          },
+          {
+            "name": "Suffolk",
+            "d": 40.4,
+            "r": 57.2,
+            "o": 2.4,
+            "votes": 312412,
+            "pct": 100,
+            "winner": "r"
+          },
+          {
+            "name": "Westchester",
+            "d": 57.4,
+            "r": 40.2,
+            "o": 2.4,
+            "votes": 188412,
+            "pct": 100,
+            "winner": "d"
+          },
+          {
+            "name": "Monroe",
+            "d": 56.4,
+            "r": 41.2,
+            "o": 2.4,
+            "votes": 192412,
+            "pct": 100,
+            "winner": "d"
+          },
+          {
+            "name": "Erie",
+            "d": 63.4,
+            "r": 34.2,
+            "o": 2.4,
+            "votes": 242712,
+            "pct": 100,
+            "winner": "d"
+          },
+          {
+            "name": "Onondaga",
+            "d": 55.4,
+            "r": 42.2,
+            "o": 2.4,
+            "votes": 132412,
+            "pct": 100,
+            "winner": "d"
+          },
+          {
+            "name": "Albany",
+            "d": 66.8,
+            "r": 31.2,
+            "o": 2,
+            "votes": 128412,
+            "pct": 100,
+            "winner": "d"
+          },
+          {
+            "name": "Dutchess",
+            "d": 49.4,
+            "r": 48.2,
+            "o": 2.4,
+            "votes": 84412,
+            "pct": 100,
+            "winner": "d"
+          },
+          {
+            "name": "Orange",
+            "d": 51.4,
+            "r": 46.2,
+            "o": 2.4,
+            "votes": 92412,
+            "pct": 100,
+            "winner": "d"
+          },
+          {
+            "name": "Rockland",
+            "d": 60.4,
+            "r": 37.2,
+            "o": 2.4,
+            "votes": 68412,
+            "pct": 100,
+            "winner": "d"
+          },
+          {
+            "name": "Saratoga",
+            "d": 52.4,
+            "r": 45.2,
+            "o": 2.4,
+            "votes": 74412,
+            "pct": 100,
+            "winner": "d"
+          },
+          {
+            "name": "Rensselaer",
+            "d": 56.4,
+            "r": 41.2,
+            "o": 2.4,
+            "votes": 58412,
+            "pct": 100,
+            "winner": "d"
+          },
+          {
+            "name": "Schenectady",
+            "d": 62.4,
+            "r": 35.2,
+            "o": 2.4,
+            "votes": 60412,
+            "pct": 100,
+            "winner": "d"
+          },
+          {
+            "name": "Tompkins",
+            "d": 74.4,
+            "r": 23.2,
+            "o": 2.4,
+            "votes": 34412,
+            "pct": 100,
+            "winner": "d"
+          },
+          {
+            "name": "Broome",
+            "d": 55.4,
+            "r": 42.2,
+            "o": 2.4,
+            "votes": 74412,
+            "pct": 100,
+            "winner": "d"
+          }
+        ]
+      },
+      {
+        "label": "🌅 Califórnia — Senado EUA (Classe 3) 100% apurado",
+        "state": "Califórnia",
+        "race_key": "ca-sen",
+        "candidates": [
+          {
+            "name": "DIANNE FEINSTEIN",
+            "party": "d",
+            "pct": 47.0,
+            "votes": 3978054,
+            "winner": true
+          },
+          {
+            "name": "MICHAEL HUFFINGTON",
+            "party": "r",
+            "pct": 44.8,
+            "votes": 3789791,
+            "winner": false
+          }
+        ],
+        "county_results": [
+          {
+            "name": "Los Angeles",
+            "d": 52.4,
+            "r": 43.2,
+            "o": 4.4,
+            "votes": 2088412,
+            "pct": 100,
+            "winner": "d"
+          },
+          {
+            "name": "San Diego",
+            "d": 38.4,
+            "r": 56.2,
+            "o": 5.4,
+            "votes": 664412,
+            "pct": 100,
+            "winner": "r"
+          },
+          {
+            "name": "Orange",
+            "d": 29.4,
+            "r": 66.2,
+            "o": 4.4,
+            "votes": 522412,
+            "pct": 100,
+            "winner": "r"
+          },
+          {
+            "name": "Riverside",
+            "d": 38.4,
+            "r": 57.2,
+            "o": 4.4,
+            "votes": 284412,
+            "pct": 100,
+            "winner": "r"
+          },
+          {
+            "name": "San Bernardino",
+            "d": 40.4,
+            "r": 55.2,
+            "o": 4.4,
+            "votes": 332412,
+            "pct": 100,
+            "winner": "r"
+          },
+          {
+            "name": "Santa Clara",
+            "d": 56.4,
+            "r": 40.2,
+            "o": 3.4,
+            "votes": 428412,
+            "pct": 100,
+            "winner": "d"
+          },
+          {
+            "name": "Alameda",
+            "d": 70.4,
+            "r": 26.2,
+            "o": 3.4,
+            "votes": 332412,
+            "pct": 100,
+            "winner": "d"
+          },
+          {
+            "name": "Sacramento",
+            "d": 47.4,
+            "r": 48.2,
+            "o": 4.4,
+            "votes": 284412,
+            "pct": 100,
+            "winner": "r"
+          },
+          {
+            "name": "Contra Costa",
+            "d": 50.4,
+            "r": 46.2,
+            "o": 3.4,
+            "votes": 236412,
+            "pct": 100,
+            "winner": "d"
+          },
+          {
+            "name": "San Francisco",
+            "d": 76.4,
+            "r": 20.2,
+            "o": 3.4,
+            "votes": 188412,
+            "pct": 100,
+            "winner": "d"
+          },
+          {
+            "name": "Fresno",
+            "d": 40.4,
+            "r": 55.2,
+            "o": 4.4,
+            "votes": 140412,
+            "pct": 100,
+            "winner": "r"
+          },
+          {
+            "name": "Kern",
+            "d": 34.4,
+            "r": 61.2,
+            "o": 4.4,
+            "votes": 140412,
+            "pct": 100,
+            "winner": "r"
+          },
+          {
+            "name": "Ventura",
+            "d": 40.4,
+            "r": 55.2,
+            "o": 4.4,
+            "votes": 168412,
+            "pct": 100,
+            "winner": "r"
+          },
+          {
+            "name": "San Mateo",
+            "d": 57.4,
+            "r": 39.2,
+            "o": 3.4,
+            "votes": 140412,
+            "pct": 100,
+            "winner": "d"
+          },
+          {
+            "name": "Marin",
+            "d": 70.4,
+            "r": 26.2,
+            "o": 3.4,
+            "votes": 64412,
+            "pct": 100,
+            "winner": "d"
+          },
+          {
+            "name": "Santa Cruz",
+            "d": 67.4,
+            "r": 29.2,
+            "o": 3.4,
+            "votes": 54412,
+            "pct": 100,
+            "winner": "d"
+          },
+          {
+            "name": "Sonoma",
+            "d": 57.4,
+            "r": 39.2,
+            "o": 3.4,
+            "votes": 92412,
+            "pct": 100,
+            "winner": "d"
+          },
+          {
+            "name": "Yolo",
+            "d": 57.4,
+            "r": 39.2,
+            "o": 3.4,
+            "votes": 46412,
+            "pct": 100,
+            "winner": "d"
+          },
+          {
+            "name": "Placer",
+            "d": 34.4,
+            "r": 61.2,
+            "o": 4.4,
+            "votes": 64412,
+            "pct": 100,
+            "winner": "r"
+          },
+          {
+            "name": "El Dorado",
+            "d": 38.4,
+            "r": 57.2,
+            "o": 4.4,
+            "votes": 44412,
+            "pct": 100,
+            "winner": "r"
+          }
+        ]
+      },
+      {
+        "label": "🌴 Flórida — Senado EUA (Classe 1) 100% apurado",
+        "state": "Flórida",
+        "race_key": "fl-sen",
+        "candidates": [
+          {
+            "name": "CONNIE MACK",
+            "party": "r",
+            "pct": 70.5,
+            "votes": 2892198,
+            "winner": true
+          },
+          {
+            "name": "HUGH RODHAM",
+            "party": "d",
+            "pct": 29.5,
+            "votes": 1210380,
+            "winner": false
+          }
+        ],
+        "county_results": [
+          {
+            "name": "Miami-Dade",
+            "r": 56.4,
+            "d": 43.6,
+            "votes": 466412,
+            "pct": 100,
+            "winner": "r"
+          },
+          {
+            "name": "Broward",
+            "r": 46.4,
+            "d": 53.6,
+            "votes": 284412,
+            "pct": 100,
+            "winner": "d"
+          },
+          {
+            "name": "Palm Beach",
+            "r": 52.4,
+            "d": 47.6,
+            "votes": 230412,
+            "pct": 100,
+            "winner": "r"
+          },
+          {
+            "name": "Orange",
+            "r": 66.4,
+            "d": 33.6,
+            "votes": 188412,
+            "pct": 100,
+            "winner": "r"
+          },
+          {
+            "name": "Hillsborough",
+            "r": 64.4,
+            "d": 35.6,
+            "votes": 236412,
+            "pct": 100,
+            "winner": "r"
+          },
+          {
+            "name": "Pinellas",
+            "r": 64.4,
+            "d": 35.6,
+            "votes": 230412,
+            "pct": 100,
+            "winner": "r"
+          },
+          {
+            "name": "Duval",
+            "r": 77.4,
+            "d": 22.6,
+            "votes": 188412,
+            "pct": 100,
+            "winner": "r"
+          },
+          {
+            "name": "Polk",
+            "r": 65.4,
+            "d": 34.6,
+            "votes": 106412,
+            "pct": 100,
+            "winner": "r"
+          },
+          {
+            "name": "Brevard",
+            "r": 72.4,
+            "d": 27.6,
+            "votes": 122412,
+            "pct": 100,
+            "winner": "r"
+          },
+          {
+            "name": "Lee",
+            "r": 75.4,
+            "d": 24.6,
+            "votes": 92412,
+            "pct": 100,
+            "winner": "r"
+          },
+          {
+            "name": "Volusia",
+            "r": 62.4,
+            "d": 37.6,
+            "votes": 112412,
+            "pct": 100,
+            "winner": "r"
+          },
+          {
+            "name": "Sarasota",
+            "r": 71.4,
+            "d": 28.6,
+            "votes": 102412,
+            "pct": 100,
+            "winner": "r"
+          },
+          {
+            "name": "Leon",
+            "r": 44.4,
+            "d": 55.6,
+            "votes": 74412,
+            "pct": 100,
+            "winner": "d"
+          },
+          {
+            "name": "Escambia",
+            "r": 72.4,
+            "d": 27.6,
+            "votes": 74412,
+            "pct": 100,
+            "winner": "r"
+          },
+          {
+            "name": "Okaloosa",
+            "r": 86.4,
+            "d": 13.6,
+            "votes": 54412,
+            "pct": 100,
+            "winner": "r"
+          },
+          {
+            "name": "Alachua",
+            "r": 44.4,
+            "d": 55.6,
+            "votes": 64412,
+            "pct": 100,
+            "winner": "d"
+          },
+          {
+            "name": "Gadsden",
+            "r": 26.4,
+            "d": 73.6,
+            "votes": 17412,
+            "pct": 100,
+            "winner": "d"
+          },
+          {
+            "name": "St. Johns",
+            "r": 78.4,
+            "d": 21.6,
+            "votes": 40412,
+            "pct": 100,
+            "winner": "r"
+          }
+        ]
+      }
+    ]
+  },
+  "blog": [
+    {
+      "time": "23:47 EST",
+      "kind": "breaking",
+      "tag": "breaking",
+      "title": "NEWT GINGRICH É ELEITO PRESIDENTE DA CÂMARA — REVOLUÇÃO REPUBLICANA COMPLETA",
+      "body": "Newt Gingrich (R-GA) será o próximo presidente da Câmara dos Representantes após os republicanos conquistarem 54 cadeiras e assumirem o controle da Câmara pela primeira vez em 40 anos. Gingrich atribuiu a vitória ao \"Contract with America\" — plano de 10 pontos apresentado em setembro. \"Hoje, o povo americano mandou uma mensagem clara\", declarou Gingrich em discurso triunfal em Marietta, Geórgia."
+    },
+    {
+      "time": "23:18 EST",
+      "kind": "breaking",
+      "tag": "proj",
+      "title": "REPUBLICANOS ASSUMEM CONTROLE DO SENADO: 53 CADEIRAS PROJETADAS",
+      "body": "Com vitórias confirmadas na Geórgia, Tennessee, Oklahoma e Maine, a NBC News projeta que os republicanos terão pelo menos 53 cadeiras no Senado, assumindo o controle da câmara alta pelo primeira vez desde 1986. O líder da minoria Bob Dole (R-KS) será o novo líder da maioria."
+    },
+    {
+      "time": "22:52 EST",
+      "kind": "normal",
+      "tag": "proj",
+      "title": "GEORGE PATAKI VENCE MARIO CUOMO EM NOVA YORK — FIM DE UM LEGADO",
+      "body": "Em uma das maiores surpresas da noite, George Pataki (R) derrota o governador Mario Cuomo (D) que estava no cargo desde 1983. Cuomo, considerado por muitos como presidenciável, perde com 45,4% dos votos contra 49% de Pataki. O resultado choca analistas que davam Cuomo como favorito. Pataki venceu especialmente nos subúrbios de Nova York, Nassau e Suffolk."
+    },
+    {
+      "time": "22:30 EST",
+      "kind": "normal",
+      "tag": "update",
+      "title": "Pete Wilson reeleito na Califórnia com margem expressiva de 14 pontos",
+      "body": "Pete Wilson (R) vence com 55,2% contra 40,6% de Kathleen Brown (D), filha e irmã de ex-governadores. Wilson usou fortemente a Proposição 187 — que restringia serviços a imigrantes ilegais — como plataforma de campanha. A proposição também foi aprovada com 59% dos votos. Analistas alertam para consequências legais e eleitorais de longo prazo para os republicanos junto à comunidade latina."
+    },
+    {
+      "time": "22:05 EST",
+      "kind": "normal",
+      "tag": "update",
+      "title": "Dianne Feinstein vence corrida mais disputada da Califórnia para o Senado",
+      "body": "Dianne Feinstein (D) derrota Michael Huffington (R) por apenas 2,2 pontos percentuais — 47,0% a 44,8% — na corrida mais cara do estado até então. Huffington, milionário do petróleo, gastou mais de US$ 28 milhões de seu próprio bolso na campanha. Feinstein manteve sua cadeira no Senado em uma vitória que custou meses de contagem de votos para ser confirmada definitivamente."
+    },
+    {
+      "time": "21:42 EST",
+      "kind": "normal",
+      "tag": "proj",
+      "title": "ROY ROMER REELEITO NO COLORADO PARA TERCEIRO MANDATO",
+      "body": "Roy Romer (D) vence Bruce Benson (R) com 55,5% dos votos, conquistando seu terceiro mandato consecutivo como governador do Colorado. Romer resistiu à maré republicana graças à sua ampla popularidade pessoal no estado e a uma campanha que focou em educação e desenvolvimento econômico. Denver, Boulder e Pueblo votaram fortemente no democrata."
+    },
+    {
+      "time": "21:15 EST",
+      "kind": "normal",
+      "tag": "update",
+      "title": "Lawton Chiles segura Flórida para democratas em apuração dramática",
+      "body": "Com 98% dos votos apurados, Lawton Chiles (D) lidera Jeb Bush (R) por apenas 16.000 votos — uma margem de 1,6 pontos. Bush, 41 anos, fez sua estreia política com uma campanha agressiva e quase desbancou o governador titular. Analistas já falam em uma próxima tentativa de Bush em 1998. Miami-Dade e Broward salvaram Chiles."
+    },
+    {
+      "time": "20:58 EST",
+      "kind": "normal",
+      "tag": "update",
+      "title": "Connie Mack reeleito para o Senado na Flórida com vitória esmagadora",
+      "body": "O senador republicano Connie Mack (R-FL) derrota Hugh Rodham (D) — irmão da primeira-dama Hillary Clinton — com 70,5% dos votos, em uma vitória histórica. Rodham foi amplamente visto como candidato fraco com pouca conexão com o estado. O resultado reflete em parte a grande impopularidade do governo Clinton na Flórida."
+    },
+    {
+      "time": "20:35 EST",
+      "kind": "normal",
+      "tag": "update",
+      "title": "DANIEL PATRICK MOYNIHAN reeleito com larga margem em Nova York para o Senado",
+      "body": "O senador Daniel Patrick Moynihan (D-NY) vence Bernadette Castro (R) com 65,1% dos votos — vitória confortável apesar da maré republicana nacional. Moynihan, intelectual e ex-embaixador nas Nações Unidas, mantinha altos índices de aprovação em Nova York independentemente de partido. Castro carregava o peso do fraco desempenho democrata no estado."
+    },
+    {
+      "time": "20:00 EST",
+      "kind": "normal",
+      "tag": "update",
+      "title": "Pesquisas encerram no Leste; NBC News começa cobertura ao vivo da noite eleitoral",
+      "body": "As urnas fecharam nos estados do Leste e as primeiras projeções começam a chegar. O clima nos quartéis generais republicanos é de euforia; os democratas aguardam ansiosamente os resultados de Nova York, Nova Jersey e Pensilvânia. Tom Brokaw ancora a cobertura especial da NBC News ao lado de analistas Tim Russert e Lisa Myers."
+    },
+    {
+      "time": "14:30 EST",
+      "kind": "normal",
+      "tag": "update",
+      "title": "Pesquisas de boca de urna apontam grande insatisfação com Clinton e governo democrata",
+      "body": "As primeiras pesquisas de boca de urna revelam que 61% dos eleitores desaprovam o desempenho do presidente Clinton. A fracassada reforma de saúde, o escândalo de Whitewater e a percepção de liberalismo excessivo estão impulsionando o voto de protesto. \"É uma onda,\" disse Tim Russert. \"A questão é o tamanho dela.\""
+    },
+    {
+      "time": "09:00 EST",
+      "kind": "normal",
+      "tag": "update",
+      "title": "Dia das eleições de meio de mandato 1994: o que está em jogo",
+      "body": "435 cadeiras na Câmara, 35 no Senado e 36 governadorias estão em disputa hoje. Os republicanos precisam ganhar 40 cadeiras para controlar a Câmara — feito considerado improvável até semanas atrás. O \"Contract with America\" de Newt Gingrich galvanizou candidatos republicanos por todo o país. Especialistas esperam turnout baixo, favorecendo o partido opositor."
+    }
+  ],
+  "governors_overview": {
+    "totals": {
+      "r": 30,
+      "d": 19,
+      "other": 1,
+      "change": "+11 GOP"
+    },
+    "history": {
+      "Histórico — NY Governadores": "Histórico — NY Governadores 1994: Pataki (R) 49,0% 1990: Cuomo (D) 53,2% 1986: Cuomo (D) 64,6% 1982: Cuomo (D) 50,9% 1978: Carey (D) 51,0%",
+      "Histórico — FL Governadores": "Histórico — FL Governadores 1994: Chiles (D) 50,8% 1990: Chiles (D) 57,0% 1986: Martinez (R) 54,6% 1982: Graham (D) 64,5%"
+    }
+  },
+  "config": {
+    "race_labels": {
+      "ny-gov": {
+        "state": "Nova York",
+        "d_cand": "Cuomo",
+        "r_cand": "Pataki",
+        "table_limit": 15
+      },
+      "fl-gov": {
+        "state": "Flórida",
+        "d_cand": "Chiles",
+        "r_cand": "Bush",
+        "table_limit": 15
+      },
+      "ca-gov": {
+        "state": "Califórnia",
+        "d_cand": "Brown",
+        "r_cand": "Wilson",
+        "table_limit": 15
+      },
+      "co-gov": {
+        "state": "Colorado",
+        "d_cand": "Romer",
+        "r_cand": "Benson",
+        "table_limit": 15
+      },
+      "ny-sen": {
+        "state": "Nova York",
+        "d_cand": "Moynihan",
+        "r_cand": "Castro",
+        "table_limit": 10
+      },
+      "ca-sen": {
+        "state": "Califórnia",
+        "d_cand": "Feinstein",
+        "r_cand": "Huffington",
+        "table_limit": 10
+      },
+      "fl-sen": {
+        "state": "Flórida",
+        "d_cand": "Rodham",
+        "r_cand": "Mack",
+        "table_limit": 10
+      }
+    },
+    "gov_states": [
+      "ny",
+      "fl",
+      "ca",
+      "co"
+    ],
+    "state_names": {
+      "ny": "Nova York",
+      "fl": "Flórida",
+      "ca": "Califórnia",
+      "co": "Colorado"
+    },
+    "state_flags": {
+      "ny": "🗽",
+      "fl": "🌴",
+      "ca": "🌅",
+      "co": "🏔"
+    }
+  }
+}
