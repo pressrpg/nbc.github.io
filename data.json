@@ -3,245 +3,298 @@
     "year": 1994,
     "date": "8 de novembro de 1994",
     "title": "NBC News | Decision 1994",
-    "subtitle": "A Revolução Republicana",
+    "subtitle": "",
     "status": "pre_election",
     "countdown_to": "2026-05-24T18:00:00-03:00",
-    "pre_election_message": "A apuração dos resultados começa amanhã às 18h. Fique ligado na NBC News para a cobertura ao vivo."
+    "pre_election_message": "A apuração começa amanhã às 18h."
   },
   "home": {
     "hero": {
-      "badge": "⚡ ELEIÇÕES DE MEIO DE MANDATO • 1994",
-      "title": "Decision 1994 — Apuração começa amanhã às 18h",
-      "sub": "Acompanhe ao vivo pela NBC News a contagem dos votos nas disputas para Senado e Governadoria em Nova York, Califórnia, Flórida e Colorado."
-    },
-    "cards": [
-      {
-        "label": "🗳 Governador — Califórnia",
-        "title": "Withmore (R) x Kathleen Brown — votos ainda não apurados",
-        "pills": [{ "text": "⏳ Aguardando apuração", "party": "n" }]
-      },
-      {
-        "label": "🗳 Governador — Nova York",
-        "title": "Schumer (D) x Stoker (R) — votos ainda não apurados",
-        "pills": [{ "text": "⏳ Aguardando apuração", "party": "n" }]
-      },
-      {
-        "label": "🗳 Governador — Flórida",
-        "title": "Biden Jr (D) x Holloway (R) — votos ainda não apurados",
-        "pills": [{ "text": "⏳ Aguardando apuração", "party": "n" }]
-      },
-      {
-        "label": "🗳 Governador — Colorado",
-        "title": "Obama II (D) x James M. Johnson — votos ainda não apurados",
-        "pills": [{ "text": "⏳ Aguardando apuração", "party": "n" }]
-      }
-    ],
-    "senate_quick": [
-      {
-        "state": "Nova York",
-        "candidates": [
-          { "name": "Fred Hale",       "party": "i", "pct": 0, "winner": false },
-          { "name": "Colin Powell",    "party": "r", "pct": 0, "winner": false },
-          { "name": "Nathaniel Hayes", "party": "d", "pct": 0, "winner": false }
-        ]
-      },
-      {
-        "state": "Califórnia",
-        "candidates": [
-          { "name": "John Roberts",  "party": "r", "pct": 0, "winner": false },
-          { "name": "Oprah Winfrey", "party": "d", "pct": 0, "winner": false }
-        ]
-      },
-      {
-        "state": "Colorado",
-        "candidates": [
-          { "name": "Frank Underwood",   "party": "d", "pct": 0, "winner": false },
-          { "name": "Raphael Warnock",   "party": "d", "pct": 0, "winner": false },
-          { "name": "Rick Perry",        "party": "r", "pct": 0, "winner": false },
-          { "name": "Cynthia Crawford",  "party": "r", "pct": 0, "winner": false }
-        ]
-      }
-    ]
+      "badge": "",
+      "title": "",
+      "sub": ""
+    }
   },
-  "sidebar_news": [
-    { "tag": "⏳ CONTAGEM REGRESSIVA", "title": "Apuração começa amanhã às 18h — fique ligado na NBC News", "time": "agora" },
-    { "tag": "PRÉVIA",   "title": "Pesquisas mostram disputa acirrada em Flórida e Nova York", "time": "1h atrás" },
-    { "tag": "ANÁLISE",  "title": "Governadores: quatro estados decidem hoje o mapa do poder", "time": "2h atrás" },
-    { "tag": "SENADO",   "title": "Colorado tem campo mais disputado: quatro candidatos ao Senado", "time": "3h atrás" },
-    { "tag": "CALIFÓRNIA", "title": "Withmore lidera pesquisas de boca-de-urna, mas resultado é incerto", "time": "4h atrás" }
-  ],
+  "sidebar_news": [],
   "races": {
     "ny-gov": {
       "type": "governor",
       "state": "NY",
-      "headline": "Governador de Nova York — 1994",
-      "description": "Disputa entre Charles Schumer (D) e John Stoker (R). Apuração começa amanhã às 18h.",
+      "headline": "",
+      "description": "",
       "pct_reported": 0,
       "total_votes": 0,
       "candidates": [
-        { "name": "CHARLES SCHUMER", "party": "d", "pct": 0, "votes": 0, "winner": false },
-        { "name": "JOHN STOKER",     "party": "r", "pct": 0, "votes": 0, "winner": false }
+        {
+          "name": "",
+          "party": "d",
+          "pct": 0,
+          "votes": 0,
+          "winner": true
+        },
+        {
+          "name": "",
+          "party": "d",
+          "pct": 0,
+          "votes": 0,
+          "winner": false
+        }
       ],
       "map": {},
       "exit_polls": [],
       "county_results": [],
-      "label": { "state": "Nova York",  "d_cand": "Schumer", "r_cand": "Stoker",   "table_limit": 15 }
+      "label": {
+        "state": "",
+        "d_cand": "",
+        "r_cand": "",
+        "table_limit": 15
+      }
     },
     "fl-gov": {
       "type": "governor",
       "state": "FL",
-      "headline": "Governador da Flórida — 1994",
-      "description": "Disputa entre Joseph Robinette Biden Jr (D) e Tom Holloway (R). Apuração começa amanhã às 18h.",
+      "headline": "",
+      "description": "",
       "pct_reported": 0,
       "total_votes": 0,
       "candidates": [
-        { "name": "JOSEPH R. BIDEN JR", "party": "d", "pct": 0, "votes": 0, "winner": false },
-        { "name": "TOM HOLLOWAY",       "party": "r", "pct": 0, "votes": 0, "winner": false }
+        {
+          "name": "",
+          "party": "d",
+          "pct": 0,
+          "votes": 0,
+          "winner": false
+        },
+        {
+          "name": "",
+          "party": "d",
+          "pct": 0,
+          "votes": 0,
+          "winner": false
+        }
       ],
       "map": {},
       "exit_polls": [],
-      "county_results": [],
-      "label": { "state": "Flórida",    "d_cand": "Biden Jr", "r_cand": "Holloway", "table_limit": 15 }
+      "county_results": [
+        {
+          "name": "",
+          "d": 0,
+          "r": 0,
+          "o": 0,
+          "votes": 0,
+          "pct": 0,
+          "winner": "d"
+        }
+      ],
+      "label": {
+        "state": "",
+        "d_cand": "",
+        "r_cand": "",
+        "table_limit": 15
+      }
     },
     "ca-gov": {
       "type": "governor",
       "state": "CA",
-      "headline": "Governador da Califórnia — 1994",
-      "description": "Disputa entre Victoria E. R. Withmore (R) e Kathleen Brown. Apuração começa amanhã às 18h.",
+      "headline": "",
+      "description": "",
       "pct_reported": 0,
       "total_votes": 0,
       "candidates": [
-        { "name": "VICTORIA E. R. WITHMORE", "party": "r", "pct": 0, "votes": 0, "winner": false },
-        { "name": "KATHLEEN BROWN",          "party": "d", "pct": 0, "votes": 0, "winner": false }
+        {
+          "name": "",
+          "party": "d",
+          "pct": 0,
+          "votes": 0,
+          "winner": false
+        },
+        {
+          "name": "",
+          "party": "d",
+          "pct": 0,
+          "votes": 0,
+          "winner": false
+        }
       ],
       "map": {},
       "exit_polls": [],
       "county_results": [],
-      "label": { "state": "Califórnia", "d_cand": "Brown",   "r_cand": "Withmore", "table_limit": 15 }
+      "label": {
+        "state": "",
+        "d_cand": "",
+        "r_cand": "",
+        "table_limit": 15
+      }
     },
     "co-gov": {
       "type": "governor",
       "state": "CO",
-      "headline": "Governador do Colorado — 1994",
-      "description": "Disputa entre Barack Hussein Obama II (D) e James Michael Johnson (R). Apuração começa amanhã às 18h.",
+      "headline": "",
+      "description": "",
       "pct_reported": 0,
       "total_votes": 0,
       "candidates": [
-        { "name": "BARACK HUSSEIN OBAMA II",  "party": "d", "pct": 0, "votes": 0, "winner": false },
-        { "name": "JAMES MICHAEL JOHNSON",    "party": "r", "pct": 0, "votes": 0, "winner": false }
+        {
+          "name": "",
+          "party": "d",
+          "pct": 0,
+          "votes": 0,
+          "winner": false
+        },
+        {
+          "name": "",
+          "party": "d",
+          "pct": 0,
+          "votes": 0,
+          "winner": false
+        }
       ],
       "map": {},
       "exit_polls": [],
       "county_results": [],
-      "label": { "state": "Colorado",   "d_cand": "Obama II", "r_cand": "Johnson",  "table_limit": 15 }
+      "label": {
+        "state": "",
+        "d_cand": "",
+        "r_cand": "",
+        "table_limit": 15
+      }
     },
     "ny-sen": {
       "type": "senate",
       "state": "NY",
-      "headline": "Senado — Nova York — 1994",
-      "description": "Três candidatos disputam a vaga: Fred Hale (Ind.), Colin Powell (R) e Nathaniel Hayes (D). Apuração começa amanhã às 18h.",
+      "headline": "",
+      "description": "",
       "pct_reported": 0,
       "total_votes": 0,
       "candidates": [
-        { "name": "FRED HALE",       "party": "i", "pct": 0, "votes": 0, "winner": false },
-        { "name": "COLIN POWELL",    "party": "r", "pct": 0, "votes": 0, "winner": false },
-        { "name": "NATHANIEL HAYES", "party": "d", "pct": 0, "votes": 0, "winner": false }
+        {
+          "name": "",
+          "party": "d",
+          "pct": 0,
+          "votes": 0,
+          "winner": false
+        },
+        {
+          "name": "",
+          "party": "d",
+          "pct": 0,
+          "votes": 0,
+          "winner": false
+        }
       ],
       "map": {},
       "exit_polls": [],
       "county_results": [],
-      "label": { "state": "Nova York",  "d_cand": "Hayes",   "r_cand": "Powell",   "table_limit": 10 }
+      "label": {
+        "state": "",
+        "d_cand": "",
+        "r_cand": "",
+        "table_limit": 15
+      }
     },
     "ca-sen": {
       "type": "senate",
       "state": "CA",
-      "headline": "Senado — Califórnia — 1994",
-      "description": "Disputa entre John Roberts (R) e Oprah Winfrey (D). Apuração começa amanhã às 18h.",
+      "headline": "",
+      "description": "",
       "pct_reported": 0,
       "total_votes": 0,
       "candidates": [
-        { "name": "JOHN ROBERTS",  "party": "r", "pct": 0, "votes": 0, "winner": false },
-        { "name": "OPRAH WINFREY", "party": "d", "pct": 0, "votes": 0, "winner": false }
+        {
+          "name": "",
+          "party": "d",
+          "pct": 0,
+          "votes": 0,
+          "winner": false
+        },
+        {
+          "name": "",
+          "party": "d",
+          "pct": 0,
+          "votes": 0,
+          "winner": false
+        }
       ],
       "map": {},
       "exit_polls": [],
       "county_results": [],
-      "label": { "state": "Califórnia", "d_cand": "Winfrey", "r_cand": "Roberts",  "table_limit": 10 }
+      "label": {
+        "state": "",
+        "d_cand": "",
+        "r_cand": "",
+        "table_limit": 15
+      }
     },
     "co-sen": {
       "type": "senate",
       "state": "CO",
-      "headline": "Senado — Colorado — 1994",
-      "description": "Quatro candidatos disputam a vaga: Frank Underwood (D), Raphael Warnock (D), Rick Perry (R) e Cynthia Crawford (R). Apuração começa amanhã às 18h.",
+      "headline": "",
+      "description": "",
       "pct_reported": 0,
       "total_votes": 0,
       "candidates": [
-        { "name": "FRANK UNDERWOOD",  "party": "d", "pct": 0, "votes": 0, "winner": false },
-        { "name": "RAPHAEL WARNOCK",  "party": "d", "pct": 0, "votes": 0, "winner": false },
-        { "name": "RICK PERRY",       "party": "r", "pct": 0, "votes": 0, "winner": false },
-        { "name": "CYNTHIA CRAWFORD", "party": "r", "pct": 0, "votes": 0, "winner": false }
+        {
+          "name": "",
+          "party": "d",
+          "pct": 0,
+          "votes": 0,
+          "winner": false
+        },
+        {
+          "name": "",
+          "party": "d",
+          "pct": 0,
+          "votes": 0,
+          "winner": false
+        }
       ],
       "map": {},
       "exit_polls": [],
       "county_results": [],
-      "label": { "state": "Colorado",   "d_cand": "Warnock", "r_cand": "Perry",    "table_limit": 10 }
+      "label": {
+        "state": "",
+        "d_cand": "",
+        "r_cand": "",
+        "table_limit": 15
+      }
     }
   },
   "senate": {
-    "totals": { "r": 0, "d": 0 },
-    "races": [
-      {
-        "label": "🗽 Nova York — Senado EUA 0% apurado",
-        "state": "Nova York",
-        "race_key": "ny-sen",
-        "candidates": [
-          { "name": "FRED HALE",       "party": "i", "pct": 0, "votes": 0, "winner": false },
-          { "name": "COLIN POWELL",    "party": "r", "pct": 0, "votes": 0, "winner": false },
-          { "name": "NATHANIEL HAYES", "party": "d", "pct": 0, "votes": 0, "winner": false }
-        ],
-        "county_results": []
-      },
-      {
-        "label": "🌅 Califórnia — Senado EUA 0% apurado",
-        "state": "Califórnia",
-        "race_key": "ca-sen",
-        "candidates": [
-          { "name": "JOHN ROBERTS",  "party": "r", "pct": 0, "votes": 0, "winner": false },
-          { "name": "OPRAH WINFREY", "party": "d", "pct": 0, "votes": 0, "winner": false }
-        ],
-        "county_results": []
-      },
-      {
-        "label": "🏔 Colorado — Senado EUA 0% apurado",
-        "state": "Colorado",
-        "race_key": "co-sen",
-        "candidates": [
-          { "name": "FRANK UNDERWOOD",  "party": "d", "pct": 0, "votes": 0, "winner": false },
-          { "name": "RAPHAEL WARNOCK",  "party": "d", "pct": 0, "votes": 0, "winner": false },
-          { "name": "RICK PERRY",       "party": "r", "pct": 0, "votes": 0, "winner": false },
-          { "name": "CYNTHIA CRAWFORD", "party": "r", "pct": 0, "votes": 0, "winner": false }
-        ],
-        "county_results": []
-      }
-    ]
+    "totals": {
+      "r": 0,
+      "d": 0
+    },
+    "races": []
   },
   "blog": [],
   "governors_overview": {
-    "totals": { "r": 0, "d": 0, "other": 0, "change": "—" },
+    "totals": {
+      "r": 0,
+      "d": 0,
+      "other": 0,
+      "change": "—"
+    },
     "history": {}
   },
   "config": {
-    "race_labels": {
-      "ny-gov": { "state": "Nova York",  "d_cand": "Schumer",  "r_cand": "Stoker",   "table_limit": 15 },
-      "fl-gov": { "state": "Flórida",    "d_cand": "Biden Jr", "r_cand": "Holloway", "table_limit": 15 },
-      "ca-gov": { "state": "Califórnia", "d_cand": "Brown",    "r_cand": "Withmore", "table_limit": 15 },
-      "co-gov": { "state": "Colorado",   "d_cand": "Obama II", "r_cand": "Johnson",  "table_limit": 15 },
-      "ny-sen": { "state": "Nova York",  "d_cand": "Hayes",    "r_cand": "Powell",   "table_limit": 10 },
-      "ca-sen": { "state": "Califórnia", "d_cand": "Winfrey",  "r_cand": "Roberts",  "table_limit": 10 },
-      "co-sen": { "state": "Colorado",   "d_cand": "Warnock",  "r_cand": "Perry",    "table_limit": 10 }
+    "race_labels": {},
+    "gov_states": [
+      "ny",
+      "fl",
+      "ca",
+      "co"
+    ],
+    "state_names": {
+      "ny": "Nova York",
+      "fl": "Flórida",
+      "ca": "Califórnia",
+      "co": "Colorado"
     },
-    "gov_states":  ["ny", "fl", "ca", "co"],
-    "state_names": { "ny": "Nova York", "fl": "Flórida", "ca": "Califórnia", "co": "Colorado" },
-    "state_flags": { "ny": "🗽", "fl": "🌴", "ca": "🌅", "co": "🏔" }
+    "state_flags": {
+      "ny": "🗽",
+      "fl": "🌴",
+      "ca": "🌅",
+      "co": "🏔"
+    }
   }
 }
