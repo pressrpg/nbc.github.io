@@ -237,66 +237,139 @@ body{font-family:'Libre Franklin',sans-serif;color:var(--text);background:#fff;f
 
 /* ===== COUNTDOWN OVERLAY ===== */
 #countdown-overlay{
-  display:none;position:fixed;inset:0;z-index:9000;
+  display:none;
+  position:fixed;inset:0;z-index:9000;
   background:linear-gradient(160deg,#04091d 0%,#0b1a3e 60%,#1a0a0a 100%);
-  flex-direction:column;align-items:center;justify-content:center;
-  padding:24px;overflow-y:auto;
+  overflow-y:auto;
+  -webkit-overflow-scrolling:touch;
 }
-.cd-logo{font-family:'Libre Franklin',sans-serif;font-size:11px;font-weight:800;
-  letter-spacing:3px;color:#888;text-transform:uppercase;margin-bottom:8px}
-.cd-title{font-family:'Playfair Display',serif;font-size:clamp(28px,5vw,52px);
+
+/* Close button */
+#cd-close{
+  position:sticky;top:12px;float:right;margin:12px 12px 0 0;
+  width:36px;height:36px;border-radius:50%;
+  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);
+  color:#aaa;font-size:20px;line-height:1;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  transition:background .2s,color .2s;z-index:10;flex-shrink:0;
+  font-family:sans-serif;
+}
+#cd-close:hover{background:rgba(255,255,255,.18);color:#fff}
+
+/* Inner wrapper centres content */
+.cd-inner{
+  display:flex;flex-direction:column;align-items:center;
+  padding:24px 16px 40px;min-height:100%;
+}
+
+/* NBC logo row */
+.cd-nbc-logo{display:flex;align-items:center;gap:10px;margin-bottom:28px}
+.cd-nbc-peacock{width:36px;height:36px;object-fit:contain}
+.cd-nbc-wordmark{color:#fff;font-size:20px;font-weight:800;letter-spacing:2px;font-family:'Libre Franklin',sans-serif}
+
+.cd-logo{font-size:11px;font-weight:800;letter-spacing:3px;color:#556;text-transform:uppercase;margin-bottom:8px;text-align:center}
+.cd-title{font-family:'Playfair Display',serif;font-size:clamp(24px,5vw,46px);
   font-weight:900;color:#fff;text-align:center;line-height:1.15;margin-bottom:6px}
-.cd-subtitle{font-size:13px;color:#7a9cc4;text-align:center;max-width:520px;
-  line-height:1.6;margin-bottom:36px}
-.cd-clock{display:flex;gap:0;margin-bottom:40px;border:1px solid #1e2d50;background:#080f22}
-.cd-unit{display:flex;flex-direction:column;align-items:center;padding:20px 32px;
-  border-right:1px solid #1e2d50}
+.cd-subtitle{font-size:13px;color:#7a9cc4;text-align:center;max-width:480px;
+  line-height:1.6;margin-bottom:32px}
+
+/* Clock */
+.cd-clock{
+  display:flex;align-items:stretch;
+  margin-bottom:36px;
+  border:1px solid #1e2d50;background:#080f22;
+  border-radius:4px;overflow:hidden;
+  width:100%;max-width:420px;
+}
+.cd-unit{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:18px 0;flex:1;
+  border-right:1px solid #1e2d50;
+}
 .cd-unit:last-child{border-right:none}
-.cd-digit{font-size:clamp(42px,8vw,72px);font-weight:900;color:var(--gold);
-  font-variant-numeric:tabular-nums;line-height:1}
-.cd-label{font-size:9px;font-weight:700;letter-spacing:2px;color:#445;
-  text-transform:uppercase;margin-top:4px}
-.cd-sep{font-size:48px;font-weight:900;color:#1e2d50;align-self:center;
-  padding:0 4px;line-height:1}
-.cd-cols{display:grid;grid-template-columns:1fr 1fr;gap:32px;width:100%;max-width:700px}
-.cd-section-title{font-size:10px;font-weight:800;letter-spacing:2px;color:var(--gold);
+.cd-digit{
+  font-size:clamp(36px,8vw,64px);font-weight:900;color:var(--gold);
+  font-variant-numeric:tabular-nums;line-height:1;font-family:'Libre Franklin',sans-serif;
+}
+.cd-label{font-size:9px;font-weight:700;letter-spacing:2px;color:#445;text-transform:uppercase;margin-top:4px}
+.cd-sep{
+  font-size:clamp(32px,6vw,52px);font-weight:900;color:#1e2d50;
+  align-self:center;padding:0 2px;line-height:1;
+}
+
+/* Candidate columns */
+.cd-cols{
+  display:grid;grid-template-columns:1fr 1fr;gap:20px;
+  width:100%;max-width:680px;
+}
+@media(max-width:540px){.cd-cols{grid-template-columns:1fr}}
+
+.cd-section-title{
+  font-size:10px;font-weight:800;letter-spacing:2px;color:var(--gold);
   text-transform:uppercase;margin-bottom:12px;padding-bottom:6px;
-  border-bottom:1px solid #1e2d50}
+  border-bottom:1px solid #1e2d50;
+}
 .cd-state-block{margin-bottom:14px}
 .cd-state-name{font-size:12px;font-weight:700;color:#8ab0d8;margin-bottom:5px}
-.cd-cand{display:flex;align-items:center;gap:7px;font-size:12px;color:#ccc;
-  padding:3px 0;border-bottom:1px solid #0d1830}
-.cd-icon{font-size:14px;line-height:1}
-.cd-r{color:#e05050}.cd-d{color:#4a8fee}.cd-i{color:#aaa}
-.cd-message{margin-top:36px;font-size:12px;color:#3a5070;text-align:center;
-  max-width:480px;line-height:1.6;font-style:italic}
+
+/* Candidate row with party logo */
+.cd-cand{
+  display:flex;align-items:center;gap:8px;font-size:12px;color:#ccc;
+  padding:4px 0;border-bottom:1px solid #0d1830;
+}
+.cd-party-logo{
+  width:22px;height:22px;object-fit:contain;flex-shrink:0;
+  filter:drop-shadow(0 1px 3px rgba(0,0,0,.5));
+}
+.cd-cand-name{font-weight:600}
+
+.cd-message{
+  margin-top:32px;font-size:11px;color:#2e4060;text-align:center;
+  max-width:420px;line-height:1.6;font-style:italic;
+}
 </style>
 </head>
 <body>
 
 <!-- ===== COUNTDOWN OVERLAY ===== -->
 <div id="countdown-overlay">
-  <div class="cd-logo">NBC News · Decision 1994</div>
-  <div class="cd-title">A apuração começa em:</div>
-  <div class="cd-subtitle">Acompanhe ao vivo a cobertura das eleições de meio de mandato.<br>Os resultados chegam amanhã às 18h.</div>
-  <div class="cd-clock">
-    <div class="cd-unit"><div class="cd-digit" id="cd-hours">00</div><div class="cd-label">horas</div></div>
-    <div class="cd-sep">:</div>
-    <div class="cd-unit"><div class="cd-digit" id="cd-minutes">00</div><div class="cd-label">minutos</div></div>
-    <div class="cd-sep">:</div>
-    <div class="cd-unit"><div class="cd-digit" id="cd-seconds">00</div><div class="cd-label">segundos</div></div>
-  </div>
-  <div class="cd-cols">
-    <div>
-      <div class="cd-section-title">🏛 Senadores em disputa</div>
-      <div id="cd-senate-list">carregando…</div>
+  <!-- sticky close button rendered outside .cd-inner so it floats over scroll -->
+  <button id="cd-close" onclick="closeCountdown()" aria-label="Fechar">&#x2715;</button>
+
+  <div class="cd-inner">
+    <!-- NBC Logo -->
+    <div class="cd-nbc-logo">
+      <img src="https://images.icon-icons.com/2845/PNG/512/nbc_logo_icon_181288.png" class="cd-nbc-peacock" alt="NBC">
+      <span class="cd-nbc-wordmark">NBC NEWS</span>
     </div>
-    <div>
-      <div class="cd-section-title">🏛 Governadores em disputa</div>
-      <div id="cd-gov-list">carregando…</div>
+
+    <div class="cd-logo">Decision 1994 · Eleições de Meio de Mandato</div>
+    <div class="cd-title">A apuração começa em:</div>
+    <div class="cd-subtitle">Acompanhe ao vivo a cobertura das eleições de meio de mandato.<br>Os resultados chegam amanhã às 18h.</div>
+
+    <!-- Clock -->
+    <div class="cd-clock">
+      <div class="cd-unit"><div class="cd-digit" id="cd-hours">00</div><div class="cd-label">horas</div></div>
+      <div class="cd-sep">:</div>
+      <div class="cd-unit"><div class="cd-digit" id="cd-minutes">00</div><div class="cd-label">min</div></div>
+      <div class="cd-sep">:</div>
+      <div class="cd-unit"><div class="cd-digit" id="cd-seconds">00</div><div class="cd-label">seg</div></div>
     </div>
+
+    <!-- Candidate columns -->
+    <div class="cd-cols">
+      <div>
+        <div class="cd-section-title">🏛 Senadores em disputa</div>
+        <div id="cd-senate-list">carregando…</div>
+      </div>
+      <div>
+        <div class="cd-section-title">🏛 Governadores em disputa</div>
+        <div id="cd-gov-list">carregando…</div>
+      </div>
+    </div>
+
+    <div class="cd-message">Os resultados serão exibidos automaticamente quando a apuração começar.</div>
   </div>
-  <div class="cd-message">Os resultados serão exibidos automaticamente quando a apuração começar.</div>
 </div>
 
 <!-- YEAR BAR -->
@@ -325,10 +398,9 @@ body{font-family:'Libre Franklin',sans-serif;color:var(--text);background:#fff;f
   <div class="tt-votes" id="tt-votes"></div>
 </div>
 
-<!-- MAIN CONTENT (hidden when 1996 selected) -->
+<!-- MAIN CONTENT -->
 <div id="main-content">
 
-  <!-- NBC HEADER -->
   <header class="nbc-header">
     <a class="nbc-logo" href="#">
       <img src="https://images.icon-icons.com/2845/PNG/512/nbc_logo_icon_181288.png" class="nbc-peacock" alt="NBC">
@@ -339,7 +411,6 @@ body{font-family:'Libre Franklin',sans-serif;color:var(--text);background:#fff;f
     </div>
   </header>
 
-  <!-- DECISION BAR -->
   <div class="decision-bar">
     <div class="decision-badge">
       <span class="dec-tick">✔</span>
@@ -353,7 +424,6 @@ body{font-family:'Libre Franklin',sans-serif;color:var(--text);background:#fff;f
     <span style="margin-left:auto;color:#888;font-size:10px" id="dec-date-label"></span>
   </div>
 
-  <!-- HOME TAB -->
   <div id="main-home" class="section-panel active">
     <div class="content-area">
       <div class="main-column" id="home-main"></div>
@@ -361,7 +431,6 @@ body{font-family:'Libre Franklin',sans-serif;color:var(--text);background:#fff;f
     </div>
   </div>
 
-  <!-- ELECTIONS TAB -->
   <div id="main-elections" class="section-panel">
     <nav class="main-nav">
       <div class="main-nav-tab active" onclick="showSubTab('gov',this)">Painel Principal</div>
@@ -371,7 +440,6 @@ body{font-family:'Libre Franklin',sans-serif;color:var(--text);background:#fff;f
       <div class="date-stamp" id="elections-date"></div>
     </nav>
 
-    <!-- GOV DETAIL SUB-PANEL -->
     <div id="panel-gov" class="sub-panel active">
       <div class="content-area">
         <div class="main-column">
@@ -385,7 +453,6 @@ body{font-family:'Libre Franklin',sans-serif;color:var(--text);background:#fff;f
       </div>
     </div>
 
-    <!-- GOVERNORS OVERVIEW -->
     <div id="panel-governors" class="sub-panel">
       <div class="content-area">
         <div class="main-column" id="governors-main"></div>
@@ -393,7 +460,6 @@ body{font-family:'Libre Franklin',sans-serif;color:var(--text);background:#fff;f
       </div>
     </div>
 
-    <!-- SENATE -->
     <div id="panel-senate" class="sub-panel">
       <div class="content-area">
         <div class="main-column" id="senate-main"></div>
@@ -401,7 +467,6 @@ body{font-family:'Libre Franklin',sans-serif;color:var(--text);background:#fff;f
       </div>
     </div>
 
-    <!-- BLOG -->
     <div id="panel-blog" class="sub-panel">
       <div class="content-area">
         <div class="main-column" id="blog-main"></div>
@@ -410,7 +475,6 @@ body{font-family:'Libre Franklin',sans-serif;color:var(--text);background:#fff;f
     </div>
   </div>
 
-  <!-- RESULTS TAB (alias to elections) -->
   <div id="main-results" class="section-panel">
     <div style="padding:40px;text-align:center;color:var(--gray-mid)">
       <div style="font-size:13px">Ver aba <strong>Eleições → Governadores</strong> para resultados completos.</div>
@@ -423,21 +487,41 @@ body{font-family:'Libre Franklin',sans-serif;color:var(--text);background:#fff;f
       © 1994 NBC Universal Media, LLC. Reprodução para fins educacionais.
     </div>
   </footer>
-</div><!-- /#main-content -->
+</div>
 
 <script>
 // ============================================================
+// PARTY LOGO URLS
+// ============================================================
+const PARTY_LOGOS = {
+  r: 'https://logos-world.net/wp-content/uploads/2022/11/Republican-Emblem.png',
+  d: 'https://upload.wikimedia.org/wikipedia/commons/9/93/Democratic_Disc.svg',
+  i: 'https://upload.wikimedia.org/wikipedia/en/a/a3/IPNY_Logo_3423432.png'
+};
+
+function partyLogoImg(party) {
+  const src = PARTY_LOGOS[party] || PARTY_LOGOS.i;
+  return `<img class="cd-party-logo" src="${src}" alt="${party.toUpperCase()}" onerror="this.style.display='none'">`;
+}
+
+// ============================================================
 // GLOBALS
 // ============================================================
-let D = {};          // full JSON
-let shownAll = {};   // toggle state for "show more" tables
-
-// Populated from D.config after JSON load — no hardcoded data here
+let D = {};
+let shownAll = {};
 let RACE_LABELS  = {};
 let GOV_STATES   = [];
 let STATE_NAMES  = {};
 let STATE_FLAG   = {};
 let TABLE_LIMITS = {};
+
+// ============================================================
+// CLOSE COUNTDOWN
+// ============================================================
+function closeCountdown() {
+  const overlay = document.getElementById('countdown-overlay');
+  if (overlay) overlay.style.display = 'none';
+}
 
 // ============================================================
 // LOAD JSON
@@ -446,7 +530,6 @@ async function loadData() {
   const r = await fetch('https://raw.githubusercontent.com/pressrpg/nbc.github.io/refs/heads/main/data.json');
   D = await r.json();
 
-  // ── FALLBACK DEFAULTS (used when JSON has no config section) ──
   const FALLBACK_RACE_LABELS = {
     'ny-gov': {state:'Nova York',   d_cand:'Cuomo',      r_cand:'Pataki',      table_limit:15},
     'fl-gov': {state:'Flórida',     d_cand:'Chiles',     r_cand:'Bush',        table_limit:15},
@@ -467,18 +550,13 @@ async function loadData() {
   STATE_NAMES = cfg.state_names || FALLBACK_STATE_NAMES;
   STATE_FLAG  = cfg.state_flags || FALLBACK_STATE_FLAGS;
 
-  // Derive TABLE_LIMITS from race_labels
   TABLE_LIMITS = {};
   for (const [key, meta] of Object.entries(RACE_LABELS)) {
     TABLE_LIMITS[key] = meta.table_limit || 15;
   }
-
-  // If a race has no label object, inject one from RACE_LABELS so renderers work
   for (const [key, race] of Object.entries(D.races || {})) {
     if (!race.label && RACE_LABELS[key]) race.label = RACE_LABELS[key];
   }
-
-  // If senate.races is missing but races object has senate keys, build it
   if (!D.senate) D.senate = { totals:{r:0,d:0}, races:[] };
   if (!D.senate.races || D.senate.races.length === 0) {
     D.senate.races = Object.entries(D.races || {})
@@ -511,7 +589,7 @@ function selectYear(year, btn) {
 }
 
 // ============================================================
-// MAIN / SUB TAB NAVIGATION
+// TAB NAVIGATION
 // ============================================================
 function showMainTab(tab, el) {
   document.querySelectorAll('.section-panel').forEach(p => p.classList.remove('active'));
@@ -519,14 +597,12 @@ function showMainTab(tab, el) {
   document.querySelectorAll('.decision-nav a').forEach(a => a.classList.remove('active'));
   if(el) el.classList.add('active');
 }
-
 function showSubTab(panel, el) {
   document.querySelectorAll('.sub-panel').forEach(p => p.classList.remove('active'));
   document.getElementById('panel-'+panel).classList.add('active');
   document.querySelectorAll('.main-nav-tab').forEach(t => t.classList.remove('active'));
   if(el) el.classList.add('active');
 }
-
 function showState(code, btn) {
   document.querySelectorAll('.state-content').forEach(s => s.classList.remove('active'));
   document.getElementById('state-'+code).classList.add('active');
@@ -535,7 +611,7 @@ function showState(code, btn) {
 }
 
 // ============================================================
-// RENDER HELPERS
+// HELPERS
 // ============================================================
 function fmtN(n)  { return Number(n).toLocaleString('pt-BR'); }
 function fmtP(n)  { return Number(n).toFixed(1).replace('.',',') + '%'; }
@@ -552,16 +628,10 @@ function renderWinnerBadge(winnerParty, color) {
 
 function renderScoreboard(race) {
   if(!race.candidates || !race.candidates.length) return '';
-  const [c1, c2] = race.candidates;
   const winner = race.candidates.find(c=>c.winner);
   const loser  = race.candidates.find(c=>!c.winner);
   if(!winner || !loser) return '';
-
-  const wParty = winner.party;
-  const wPct   = winner.pct;
-  const lPct   = loser.pct;
-  const total  = fmtN(race.total_votes);
-
+  const total = fmtN(race.total_votes);
   return `<div class="scoreboard">
     <div class="score-candidate ${partyClass(winner.party)} ${partyClass(winner.party)}-win">
       <div class="score-name">${winner.name} <span class="winner-check">✔ VENCEDOR</span></div>
@@ -585,113 +655,75 @@ function renderScoreboard(race) {
 }
 
 // ============================================================
-// SVG MAP RENDERER
+// SVG MAP
 // ============================================================
-const FILL = {
-  'd':      '#1a55c8',
-  'r':      '#d42b2b',
-  'd-dark': '#0d3d9e',
-  'r-dark': '#9b1111'
-};
+const FILL = {d:'#1a55c8',r:'#d42b2b','d-dark':'#0d3d9e','r-dark':'#9b1111'};
 
 function renderMap(raceKey, mapData) {
   if(!mapData || !mapData.counties || !mapData.counties.length) return '';
-  const meta = RACE_LABELS[raceKey] || {};
   const [,, vW, vH] = (mapData.viewBox||'0 0 500 300').split(' ').map(Number);
-
   let rects = mapData.counties.map(c => {
-    const fillKey = c.party + (c.dark ? '-dark' : '');
-    const fill = FILL[fillKey] || '#aaa';
-    return `<rect x="${c.x}" y="${c.y}" width="${c.w}" height="${c.h}"
-      fill="${fill}" rx="1"
-      data-county="${c.name}" data-party="${c.party}"
-      data-racekey="${raceKey}"/>
-    <text x="${c.x + c.w/2}" y="${c.y + c.h/2 + 3}" font-size="6.5"
-      fill="#fff" text-anchor="middle" font-family="sans-serif"
-      pointer-events="none">${c.name}</text>`;
+    const fill = FILL[c.party+(c.dark?'-dark':'')] || '#aaa';
+    return `<rect x="${c.x}" y="${c.y}" width="${c.w}" height="${c.h}" fill="${fill}" rx="1"
+      data-county="${c.name}" data-party="${c.party}" data-racekey="${raceKey}"/>
+    <text x="${c.x+c.w/2}" y="${c.y+c.h/2+3}" font-size="6.5" fill="#fff" text-anchor="middle"
+      font-family="sans-serif" pointer-events="none">${c.name}</text>`;
   }).join('');
-
-  // Legend
   const winner = D.races[raceKey]?.candidates?.find(c=>c.winner);
   const loser  = D.races[raceKey]?.candidates?.find(c=>!c.winner);
   let legend = '';
   if(winner && loser) {
-    const wShort = winner.name.split(' ').pop();
-    const lShort = loser.name.split(' ').pop();
-    const lx = 15, ly = vH - 20;
+    const wS = winner.name.split(' ').pop(), lS = loser.name.split(' ').pop();
+    const lx=15, ly=vH-20;
     legend = `
       <rect x="${lx}" y="${ly}" width="12" height="10" fill="${FILL[winner.party]}" rx="1"/>
-      <text x="${lx+15}" y="${ly+9}" font-size="9" fill="#666" font-family="sans-serif">${wShort} (${winner.party.toUpperCase()})</text>
+      <text x="${lx+15}" y="${ly+9}" font-size="9" fill="#666" font-family="sans-serif">${wS} (${winner.party.toUpperCase()})</text>
       <rect x="${lx+90}" y="${ly}" width="12" height="10" fill="${FILL[loser.party]}" rx="1"/>
-      <text x="${lx+105}" y="${ly+9}" font-size="9" fill="#666" font-family="sans-serif">${lShort} (${loser.party.toUpperCase()})</text>
-    `;
+      <text x="${lx+105}" y="${ly+9}" font-size="9" fill="#666" font-family="sans-serif">${lS} (${loser.party.toUpperCase()})</text>`;
   }
-
   return `<div class="map-container">
     <div class="map-title">RESULTADOS POR CONDADO</div>
     <svg class="state-map-svg" viewBox="${mapData.viewBox}" xmlns="http://www.w3.org/2000/svg">
-      ${rects}
-      ${legend}
+      ${rects}${legend}
     </svg>
   </div>`;
 }
 
 // ============================================================
-// COUNTY TABLE RENDERER
+// COUNTY TABLE
 // ============================================================
 function renderCountyTable(raceKey) {
   const rows = D.races[raceKey]?.county_results;
   if(!rows || !rows.length) return '';
-
-  const meta   = RACE_LABELS[raceKey] || {};
+  const meta = RACE_LABELS[raceKey] || {};
   const isShown = shownAll[raceKey];
-  const limit  = isShown ? rows.length : (TABLE_LIMITS[raceKey] || 15);
-
-  // Detect column layout from first row
+  const limit = isShown ? rows.length : (TABLE_LIMITS[raceKey] || 15);
   const sample = rows[0];
   const hasDem = 'dem' in sample;
-  const hasD   = 'd' in sample;
-  const hasO   = 'o' in sample;
-  const hasI   = 'i' in sample;
-
+  const hasD = 'd' in sample;
+  const hasO = 'o' in sample;
+  const hasI = 'i' in sample;
   let thead = '';
   if(hasDem) {
-    thead = `<tr>
-      <th>Condado</th>
-      <th class="r">${meta.d_cand||'D'} (D) %</th>
-      <th class="r">${meta.r_cand||'R'} (R) %</th>
-      <th class="r">Votos</th><th>%apurado</th></tr>`;
+    thead = `<tr><th>Condado</th><th class="r">${meta.d_cand||'D'} (D) %</th><th class="r">${meta.r_cand||'R'} (R) %</th><th class="r">Votos</th><th>%apurado</th></tr>`;
   } else if(hasD && hasI) {
-    thead = `<tr>
-      <th>Condado</th>
-      <th class="r">${meta.d_cand||'D'} (D) %</th>
-      <th class="r">${meta.r_cand||'R'} (R) %</th>
-      <th class="r">Outros %</th>
-      <th class="r">Votos</th><th>%apurado</th></tr>`;
+    thead = `<tr><th>Condado</th><th class="r">${meta.d_cand||'D'} (D) %</th><th class="r">${meta.r_cand||'R'} (R) %</th><th class="r">Outros %</th><th class="r">Votos</th><th>%apurado</th></tr>`;
   } else {
-    thead = `<tr>
-      <th>Condado</th>
-      <th class="r">${meta.d_cand||'D'} (D) %</th>
-      <th class="r">${meta.r_cand||'R'} (R) %</th>
-      ${hasO ? `<th class="r">Outros %</th>` : ''}
-      <th class="r">Votos</th><th>%apurado</th></tr>`;
+    thead = `<tr><th>Condado</th><th class="r">${meta.d_cand||'D'} (D) %</th><th class="r">${meta.r_cand||'R'} (R) %</th>${hasO?`<th class="r">Outros %</th>`:''}<th class="r">Votos</th><th>%apurado</th></tr>`;
   }
-
   let tbody = '';
-  for(let i = 0; i < Math.min(limit, rows.length); i++) {
-    const row = rows[i];
-    const isD = row.winner === 'd';
-    const dPct = hasDem ? row.dem : (row.d || 0);
-    const rPct = hasDem ? row.rep : (row.r || 0);
-    const oPct = row.o || row.i || 0;
-    const votes = fmtN(row.votes || row.Votes || 0);
-    const chkD = isD ? '✔' : '';
-    const chkR = !isD ? '✔' : '';
-    tbody += `<tr>
+  for(let i=0;i<Math.min(limit,rows.length);i++){
+    const row=rows[i];
+    const isD=row.winner==='d';
+    const dPct=hasDem?row.dem:(row.d||0);
+    const rPct=hasDem?row.rep:(row.r||0);
+    const oPct=row.o||row.i||0;
+    const votes=fmtN(row.votes||row.Votes||0);
+    tbody+=`<tr>
       <td class="cty-name">${row.name}</td>
-      <td class="r ${isD?'pct-dem':''}">${chkD} ${dPct.toFixed(1)}%</td>
-      <td class="r ${!isD?'pct-rep':''}">${chkR} ${rPct.toFixed(1)}%</td>
-      ${(hasO || hasI) ? `<td class="r pct-third">${oPct.toFixed(1)}%</td>` : ''}
+      <td class="r ${isD?'pct-dem':''}">${isD?'✔ ':''} ${dPct.toFixed(1)}%</td>
+      <td class="r ${!isD?'pct-rep':''}">${!isD?'✔ ':''} ${rPct.toFixed(1)}%</td>
+      ${(hasO||hasI)?`<td class="r pct-third">${oPct.toFixed(1)}%</td>`:''}
       <td class="r">${votes}</td>
       <td><div class="bar-mini">
         <div class="bar-mini-dem" style="width:${dPct}%"></div>
@@ -699,170 +731,131 @@ function renderCountyTable(raceKey) {
       </div><span class="reported-badge"> 100%</span></td>
     </tr>`;
   }
-
-  const label = isShown ? '▲ OCULTAR CONDADOS' : '▼ MOSTRAR TODOS OS CONDADOS';
+  const label=isShown?'▲ OCULTAR CONDADOS':'▼ MOSTRAR TODOS OS CONDADOS';
   return `<div class="results-section">
     <div class="section-title">Resultados por Condado <span>100% apurado</span></div>
-    <table class="results-table">
-      <thead>${thead}</thead>
-      <tbody>${tbody}</tbody>
-    </table>
+    <table class="results-table"><thead>${thead}</thead><tbody>${tbody}</tbody></table>
     <button class="show-more-btn" onclick="toggleTable('${raceKey}',this)">${label}</button>
   </div>`;
 }
 
 function toggleTable(raceKey, btn) {
-  shownAll[raceKey] = !shownAll[raceKey];
-  const race = D.races[raceKey];
-  const container = btn.closest('.results-section');
-  container.outerHTML = renderCountyTable(raceKey);
+  shownAll[raceKey]=!shownAll[raceKey];
+  const container=btn.closest('.results-section');
+  container.outerHTML=renderCountyTable(raceKey);
 }
 
 // ============================================================
-// EXIT POLLS RENDERER
+// EXIT POLLS
 // ============================================================
 function renderExitPolls(polls, raceKey) {
   if(!polls || !polls.length) return '';
-  const race = D.races[raceKey];
-  const winner = race?.candidates?.find(c=>c.winner);
-  const loser  = race?.candidates?.find(c=>!c.winner);
-
-  let html = `<div class="results-section exit-poll-section">
-    <div class="section-title">Pesquisas de boca de urna</div>`;
-
-  for(const grp of polls) {
-    html += `<div class="exit-group">
-      <div class="exit-group-label">${grp.group}</div>`;
-    for(const row of grp.rows) {
-      const dFirst = row.d >= row.r;
-      html += `<div class="exit-row">
+  let html=`<div class="results-section exit-poll-section"><div class="section-title">Pesquisas de boca de urna</div>`;
+  for(const grp of polls){
+    html+=`<div class="exit-group"><div class="exit-group-label">${grp.group}</div>`;
+    for(const row of grp.rows){
+      const dFirst=row.d>=row.r;
+      html+=`<div class="exit-row">
         <span class="exit-row-label">${row.label}</span>
         <div class="exit-bar-wrap">
           ${dFirst
-            ? `<div class="exit-bar-dem" style="width:${row.d}%"></div><div class="exit-bar-rep" style="width:${row.r}%"></div>`
-            : `<div class="exit-bar-rep" style="width:${row.r}%"></div><div class="exit-bar-dem" style="width:${row.d}%"></div>`}
+            ?`<div class="exit-bar-dem" style="width:${row.d}%"></div><div class="exit-bar-rep" style="width:${row.r}%"></div>`
+            :`<div class="exit-bar-rep" style="width:${row.r}%"></div><div class="exit-bar-dem" style="width:${row.d}%"></div>`}
         </div>
         <span class="exit-row-pct" style="color:${dFirst?'var(--dem)':'var(--rep)'}">${row.d}%</span>
         <span class="exit-row-pct" style="color:${dFirst?'var(--rep)':'var(--dem)'}">${row.r}%</span>
       </div>`;
     }
-    html += `</div>`;
+    html+=`</div>`;
   }
-  html += `</div>`;
-  return html;
+  return html+`</div>`;
 }
 
 // ============================================================
-// RENDER: HOME
+// HOME
 // ============================================================
 function renderHome() {
-  const home = D.home;
-  const hero = home.hero;
-  let mainHtml = `
+  const home=D.home; const hero=home.hero;
+  let mainHtml=`
     <div class="home-hero">
       <div class="home-hero-badge">${hero.badge}</div>
       <div class="home-hero-title">${hero.title}</div>
       <div class="home-hero-sub">${hero.sub}</div>
     </div>
     <div class="home-grid">`;
-
-  for(const card of home.cards) {
-    const pills = (card.pills||[]).map(p =>
-      `<span class="winner-pill ${p.party}">${p.text}</span>`).join('');
-    mainHtml += `<div class="home-card">
+  for(const card of home.cards){
+    const pills=(card.pills||[]).map(p=>`<span class="winner-pill ${p.party}">${p.text}</span>`).join('');
+    mainHtml+=`<div class="home-card">
       <div class="home-card-label">${card.label}</div>
       <div class="home-card-title">${card.title}</div>
       <div style="display:flex;gap:6px;margin-top:6px;flex-wrap:wrap">${pills}</div>
     </div>`;
   }
-  mainHtml += `</div>`;
-
-  // Senate quick
-  mainHtml += `<div class="section-title" style="margin-bottom:12px">Senado — Eleições de 1994 <span>estados selecionados</span></div>`;
-  for(const sr of home.senate_quick) {
-    const cands = sr.candidates.map(c => {
-      const cls = c.winner
-        ? `senate-cand ${partyClass(c.party)}-win`
-        : `senate-cand ${partyClass(c.party)}-los`;
-      const pctCls = `senate-cand-pct ${partyClass(c.party)}-c`;
-      const check = c.winner ? ' ✔' : '';
-      return `<div class="${cls}">
-        <div class="senate-cand-name">${c.name}${check}</div>
-        <div class="${pctCls}">${fmtP(c.pct)}</div>
-      </div>`;
+  mainHtml+=`</div>`;
+  mainHtml+=`<div class="section-title" style="margin-bottom:12px">Senado — Eleições de 1994 <span>estados selecionados</span></div>`;
+  for(const sr of home.senate_quick){
+    const cands=sr.candidates.map(c=>{
+      const cls=c.winner?`senate-cand ${partyClass(c.party)}-win`:`senate-cand ${partyClass(c.party)}-los`;
+      const pctCls=`senate-cand-pct ${partyClass(c.party)}-c`;
+      const check=c.winner?' ✔':'';
+      return `<div class="${cls}"><div class="senate-cand-name">${c.name}${check}</div><div class="${pctCls}">${fmtP(c.pct)}</div></div>`;
     }).join('');
-    mainHtml += `<div class="senate-race-row">
+    mainHtml+=`<div class="senate-race-row">
       <div class="senate-race-state">📍 ${sr.state}</div>
       <div class="senate-candidate-pair">${cands}</div>
       <div class="senate-status">PROJETADO ✔</div>
     </div>`;
   }
-
-  document.getElementById('home-main').innerHTML = mainHtml;
-
-  // Sidebar
-  let sbHtml = `<div class="sidebar-section"><div class="sidebar-title">Últimas notícias de 1994</div>`;
-  for(const item of D.sidebar_news) {
-    sbHtml += `<div class="sidebar-item">
+  document.getElementById('home-main').innerHTML=mainHtml;
+  let sbHtml=`<div class="sidebar-section"><div class="sidebar-title">Últimas notícias de 1994</div>`;
+  for(const item of D.sidebar_news){
+    sbHtml+=`<div class="sidebar-item">
       <div class="sidebar-item-tag">${item.tag}</div>
       <div class="sidebar-item-title">${item.title}</div>
       <div class="sidebar-item-time">${item.time}</div>
     </div>`;
   }
-  sbHtml += `</div>`;
-  document.getElementById('home-sidebar').innerHTML = sbHtml;
+  document.getElementById('home-sidebar').innerHTML=sbHtml+`</div>`;
 }
 
 // ============================================================
-// RENDER: GOV DETAIL PANEL
+// GOV PANEL
 // ============================================================
 function renderGovPanel() {
-  // Selector buttons
-  const btnsEl = document.getElementById('state-selector-btns');
-  btnsEl.innerHTML = GOV_STATES.map((code, i) =>
+  const btnsEl=document.getElementById('state-selector-btns');
+  btnsEl.innerHTML=GOV_STATES.map((code,i)=>
     `<button class="state-btn${i===0?' active':''}" onclick="showState('${code}',this)">${STATE_FLAG[code]} ${STATE_NAMES[code]}</button>`
   ).join('');
-
-  // State panels
-  let panelsHtml = '';
-  for(let i=0; i<GOV_STATES.length; i++) {
-    const code = GOV_STATES[i];
-    const raceKey = code + '-gov';
-    const race = D.races[raceKey];
+  let panelsHtml='';
+  for(let i=0;i<GOV_STATES.length;i++){
+    const code=GOV_STATES[i], raceKey=code+'-gov', race=D.races[raceKey];
     if(!race) continue;
-
-    const active = i===0 ? ' active' : '';
-    const winner = race.candidates?.find(c=>c.winner);
-    const badgeBg = winner?.party==='d' ? 'var(--win-badge)' : '#9b1111';
-
-    panelsHtml += `<div id="state-${code}" class="state-content${active}">
+    const active=i===0?' active':'';
+    const winner=race.candidates?.find(c=>c.winner);
+    const badgeBg=winner?.party==='d'?'var(--win-badge)':'#9b1111';
+    panelsHtml+=`<div id="state-${code}" class="state-content${active}">
       <div class="result-header">
-        ${renderWinnerBadge(winner?.party, badgeBg)}
+        ${renderWinnerBadge(winner?.party,badgeBg)}
         <div class="result-headline">${race.headline}</div>
         <div class="result-sub">${race.description}</div>
       </div>
       ${renderScoreboard(race)}
-      ${renderMap(raceKey, race.map)}
+      ${renderMap(raceKey,race.map)}
       ${renderCountyTable(raceKey)}
-      ${renderExitPolls(race.exit_polls, raceKey)}
+      ${renderExitPolls(race.exit_polls,raceKey)}
     </div>`;
   }
-  document.getElementById('state-panels').innerHTML = panelsHtml;
-
-  // Gov sidebar
-  const gov = D.governors_overview;
-  document.getElementById('gov-sidebar').innerHTML = `
-    <div class="sidebar-section">
-      <div class="sidebar-title">Últimas notícias</div>
-      ${D.sidebar_news.slice(0,4).map(item=>`
-        <div class="sidebar-item">
-          <div class="sidebar-item-tag">${item.tag}</div>
-          <div class="sidebar-item-title">${item.title}</div>
-          <div class="sidebar-item-time">${item.time}</div>
-        </div>`).join('')}
+  document.getElementById('state-panels').innerHTML=panelsHtml;
+  const gov=D.governors_overview;
+  document.getElementById('gov-sidebar').innerHTML=`
+    <div class="sidebar-section"><div class="sidebar-title">Últimas notícias</div>
+      ${D.sidebar_news.slice(0,4).map(item=>`<div class="sidebar-item">
+        <div class="sidebar-item-tag">${item.tag}</div>
+        <div class="sidebar-item-title">${item.title}</div>
+        <div class="sidebar-item-time">${item.time}</div>
+      </div>`).join('')}
     </div>
-    <div class="sidebar-section">
-      <div class="sidebar-title">Placar — Governadores</div>
+    <div class="sidebar-section"><div class="sidebar-title">Placar — Governadores</div>
       <div style="display:flex;gap:0">
         <div style="flex:1;text-align:center;padding:8px;border-top:4px solid var(--rep)">
           <div style="font-size:28px;font-weight:800;color:var(--rep)">${gov.totals.r}</div>
@@ -878,11 +871,11 @@ function renderGovPanel() {
 }
 
 // ============================================================
-// RENDER: GOVERNORS OVERVIEW
+// GOVERNORS OVERVIEW
 // ============================================================
 function renderGovernorsOverview() {
-  const gov = D.governors_overview;
-  let html = `
+  const gov=D.governors_overview;
+  let html=`
     <div class="result-header">
       <div class="result-headline" style="font-size:20px">Eleições para Governador — 1994</div>
       <div class="result-sub">36 estados realizaram eleições para governador. Os republicanos ganharam o controle de 11 estados adicionais.</div>
@@ -896,16 +889,14 @@ function renderGovernorsOverview() {
     </div>
     <div class="section-title">Resultados por Estado — 4 Estados Monitorados</div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px">`;
-
-  for(const code of GOV_STATES) {
-    const rk = code + '-gov';
-    const race = D.races[rk];
+  for(const code of GOV_STATES){
+    const rk=code+'-gov', race=D.races[rk];
     if(!race) continue;
-    const winner = race.candidates?.find(c=>c.winner);
-    const loser  = race.candidates?.find(c=>!c.winner);
-    if(!winner || !loser) continue;
-    const margin = (winner.pct - loser.pct).toFixed(1).replace('.',',');
-    html += `<div style="border:1px solid var(--gray-border);padding:12px">
+    const winner=race.candidates?.find(c=>c.winner);
+    const loser=race.candidates?.find(c=>!c.winner);
+    if(!winner||!loser) continue;
+    const margin=(winner.pct-loser.pct).toFixed(1).replace('.',',');
+    html+=`<div style="border:1px solid var(--gray-border);padding:12px">
       <div style="font-weight:700;font-size:13px;margin-bottom:8px">${STATE_FLAG[code]} ${STATE_NAMES[code]}</div>
       <div style="display:flex;gap:6px;align-items:center;margin-bottom:4px">
         <span style="width:10px;height:10px;background:${partyColor(winner.party)};display:inline-block;border-radius:1px"></span>
@@ -923,16 +914,16 @@ function renderGovernorsOverview() {
       <div style="font-size:10px;color:#999;margin-top:4px">+${margin}pp · ${fmtN(race.total_votes)} votos</div>
     </div>`;
   }
-  html += `</div>`;
-  document.getElementById('governors-main').innerHTML = html;
+  html+=`</div>`;
+  document.getElementById('governors-main').innerHTML=html;
 }
 
 // ============================================================
-// RENDER: SENATE
+// SENATE
 // ============================================================
 function renderSenate() {
-  const sen = D.senate;
-  let html = `
+  const sen=D.senate;
+  let html=`
     <div class="result-header">
       <div class="winner-badge" style="background:#9b1111">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="width:14px;height:14px"><polyline points="20 6 9 17 4 12"/></svg>
@@ -949,29 +940,20 @@ function renderSenate() {
       <div class="senate-total-box dem"><div class="senate-seats dem-c">${sen.totals.d}</div><div class="senate-label">Democratas</div></div>
     </div>
     <div class="section-title">Estados Monitorados — Senado 1994</div>`;
-
-  for(const sr of sen.races) {
-    html += `<div class="results-section">
+  for(const sr of sen.races){
+    html+=`<div class="results-section">
       <div style="font-size:13px;font-weight:700;padding:6px 0;border-bottom:1px solid var(--gray-border);margin-bottom:8px;display:flex;justify-content:space-between">
         <span>${sr.state}</span><span style="font-size:10px;color:var(--gray-mid)">100% apurado</span>
       </div>`;
-
-    const sb = {candidates: sr.candidates, total_votes: 0};
-    for(const c of sr.candidates) sb.total_votes += c.votes || 0;
-    html += renderScoreboard(sb);
-
-    // County table if available
-    if(sr.county_results && sr.county_results.length) {
-      const rk = sr.race_key;
-      const rows = sr.county_results;
-      const sample = rows[0];
-      const hasDem = 'dem' in sample || 'd' in sample;
-      const meta = RACE_LABELS[rk] || {};
-      let tHead = `<tr><th>Condado</th><th class="r">${meta.r_cand||'R'} (R) %</th><th class="r">${meta.d_cand||'D'} (D) %</th><th class="r">Votos</th><th>%apurado</th></tr>`;
-      let tBody = rows.slice(0,10).map(row => {
-        const rPct = row.r || row.rep || 0;
-        const dPct = row.d || row.dem || 0;
-        const isD  = row.winner === 'd';
+    const sb={candidates:sr.candidates,total_votes:0};
+    for(const c of sr.candidates) sb.total_votes+=c.votes||0;
+    html+=renderScoreboard(sb);
+    if(sr.county_results&&sr.county_results.length){
+      const rk=sr.race_key, rows=sr.county_results;
+      const meta=RACE_LABELS[rk]||{};
+      let tHead=`<tr><th>Condado</th><th class="r">${meta.r_cand||'R'} (R) %</th><th class="r">${meta.d_cand||'D'} (D) %</th><th class="r">Votos</th><th>%apurado</th></tr>`;
+      let tBody=rows.slice(0,10).map(row=>{
+        const rPct=row.r||row.rep||0; const dPct=row.d||row.dem||0; const isD=row.winner==='d';
         return `<tr>
           <td class="cty-name">${row.name}</td>
           <td class="r ${!isD?'pct-rep':''}">${!isD?'✔ ':''} ${rPct.toFixed(1)}%</td>
@@ -983,16 +965,14 @@ function renderSenate() {
           </div><span class="reported-badge"> 100%</span></td>
         </tr>`;
       }).join('');
-      html += `<div class="section-title" style="margin-top:12px;font-size:12px">Resultados por Condado</div>
+      html+=`<div class="section-title" style="margin-top:12px;font-size:12px">Resultados por Condado</div>
         <table class="results-table"><thead>${tHead}</thead><tbody>${tBody}</tbody></table>`;
     }
-    html += `</div>`;
+    html+=`</div>`;
   }
-
-  document.getElementById('senate-main').innerHTML = html;
-  document.getElementById('senate-sidebar').innerHTML = `
-    <div class="sidebar-section">
-      <div class="sidebar-title">Controle do Senado</div>
+  document.getElementById('senate-main').innerHTML=html;
+  document.getElementById('senate-sidebar').innerHTML=`
+    <div class="sidebar-section"><div class="sidebar-title">Controle do Senado</div>
       <div style="font-size:11px;line-height:1.8;color:var(--text-mid)">
         <b>1994 (novo):</b> Rep. 53 – Dem. 47<br>
         <b>1992:</b> Dem. 57 – Rep. 43<br>
@@ -1002,8 +982,7 @@ function renderSenate() {
         <b>1984:</b> Rep. 53 – Dem. 47
       </div>
     </div>
-    <div class="sidebar-section">
-      <div class="sidebar-title">Senadores notáveis derrotados</div>
+    <div class="sidebar-section"><div class="sidebar-title">Senadores notáveis derrotados</div>
       <div style="font-size:11px;color:var(--text-mid);line-height:1.7">
         • Harris Wofford (PA) – D<br>
         • Jim Sasser (TN) – D<br>
@@ -1015,86 +994,72 @@ function renderSenate() {
 }
 
 // ============================================================
-// RENDER: BLOG
+// BLOG
 // ============================================================
 function renderBlog() {
-  const TAG_CSS = {breaking:'tag-breaking', proj:'tag-proj', update:'tag-update'};
-  const TAG_LBL = {breaking:'URGENTE', proj:'PROJETADO', update:'ATUALIZAÇÃO'};
-  let html = `
+  const TAG_CSS={breaking:'tag-breaking',proj:'tag-proj',update:'tag-update'};
+  const TAG_LBL={breaking:'URGENTE',proj:'PROJETADO',update:'ATUALIZAÇÃO'};
+  let html=`
     <div class="blog-header">
       <div class="live-dot"></div>
       <div class="live-label">BLOG AO VIVO</div>
       <div style="margin-left:auto;font-size:11px;color:var(--gray-mid)">Noite de 8 de novembro de 1994</div>
     </div>`;
-
-  for(const entry of D.blog) {
-    const cls = entry.kind === 'breaking' ? 'blog-entry breaking' : 'blog-entry';
-    const tagCss = TAG_CSS[entry.tag] || 'tag-update';
-    const tagLbl = TAG_LBL[entry.tag] || 'ATUALIZAÇÃO';
-    html += `<div class="${cls}">
+  for(const entry of D.blog){
+    const cls=entry.kind==='breaking'?'blog-entry breaking':'blog-entry';
+    const tagCss=TAG_CSS[entry.tag]||'tag-update';
+    const tagLbl=TAG_LBL[entry.tag]||'ATUALIZAÇÃO';
+    html+=`<div class="${cls}">
       <div class="blog-time">${entry.time}</div>
       <div><span class="blog-tag ${tagCss}">${tagLbl}</span></div>
       <div class="blog-title">${entry.title}</div>
       <div class="blog-body">${entry.body}</div>
     </div>`;
   }
-  document.getElementById('blog-main').innerHTML = html;
+  document.getElementById('blog-main').innerHTML=html;
 }
 
 // ============================================================
-// INTERACTIVE MAP TOOLTIP
+// MAP TOOLTIPS
 // ============================================================
 function initMapTooltips() {
-  const tip = document.getElementById('map-tooltip');
-
-  document.addEventListener('mouseover', e => {
-    const rect = e.target.closest('rect[data-county]');
+  const tip=document.getElementById('map-tooltip');
+  document.addEventListener('mouseover',e=>{
+    const rect=e.target.closest('rect[data-county]');
     if(!rect) return;
-
-    const county   = rect.dataset.county;
-    const party    = rect.dataset.party;
-    const raceKey  = rect.dataset.racekey;
+    const county=rect.dataset.county, party=rect.dataset.party, raceKey=rect.dataset.racekey;
     if(!raceKey) return;
-
-    const rows = D.races[raceKey]?.county_results || [];
-    const meta = RACE_LABELS[raceKey] || {};
-    const row  = rows.find(r => r.name === county || county.includes(r.name));
+    const rows=D.races[raceKey]?.county_results||[];
+    const meta=RACE_LABELS[raceKey]||{};
+    const row=rows.find(r=>r.name===county||county.includes(r.name));
     if(!row) return;
-
-    const dPct = 'd' in row ? row.d : (row.dem || 0);
-    const rPct = 'r' in row ? row.r : (row.rep || 0);
-    const iPct = row.i || row.o || 0;
-    const isD  = row.winner === 'd';
-
-    document.getElementById('tt-county').textContent = row.name;
-    document.getElementById('tt-winner').innerHTML =
-      `<span class="tt-winner tt-winner-${row.winner}">✔ ${isD ? meta.d_cand : meta.r_cand} vence</span>`;
-
-    let rowsHtml = `
+    const dPct='d' in row?row.d:(row.dem||0);
+    const rPct='r' in row?row.r:(row.rep||0);
+    const iPct=row.i||row.o||0;
+    const isD=row.winner==='d';
+    document.getElementById('tt-county').textContent=row.name;
+    document.getElementById('tt-winner').innerHTML=
+      `<span class="tt-winner tt-winner-${row.winner}">✔ ${isD?meta.d_cand:meta.r_cand} vence</span>`;
+    let rowsHtml=`
       <div class="tt-row"><span class="tt-label">${meta.d_cand||'D'} (D)</span><span class="tt-val-d">${dPct.toFixed(1)}%</span></div>
       <div class="tt-row"><span class="tt-label">${meta.r_cand||'R'} (R)</span><span class="tt-val-r">${rPct.toFixed(1)}%</span></div>`;
-    if(iPct > 0)
-      rowsHtml += `<div class="tt-row"><span class="tt-label">Outros</span><span class="tt-val-i">${iPct.toFixed(1)}%</span></div>`;
-
-    document.getElementById('tt-rows').innerHTML = rowsHtml;
-    document.getElementById('tt-bar').innerHTML =
+    if(iPct>0) rowsHtml+=`<div class="tt-row"><span class="tt-label">Outros</span><span class="tt-val-i">${iPct.toFixed(1)}%</span></div>`;
+    document.getElementById('tt-rows').innerHTML=rowsHtml;
+    document.getElementById('tt-bar').innerHTML=
       `<div class="tt-bar-d" style="width:${dPct}%"></div><div class="tt-bar-r" style="width:${rPct}%"></div>`;
-    document.getElementById('tt-votes').textContent = `Total: ${fmtN(row.votes||0)} votos · 100% apurado`;
-
+    document.getElementById('tt-votes').textContent=`Total: ${fmtN(row.votes||0)} votos · 100% apurado`;
     tip.classList.add('visible');
   });
-
-  document.addEventListener('mousemove', e => {
+  document.addEventListener('mousemove',e=>{
     if(!tip.classList.contains('visible')) return;
-    const x = e.clientX + 14, y = e.clientY - 10;
-    tip.style.left = (x + tip.offsetWidth  > window.innerWidth  - 10 ? e.clientX - tip.offsetWidth  - 10 : x) + 'px';
-    tip.style.top  = (y + tip.offsetHeight > window.innerHeight - 10 ? e.clientY - tip.offsetHeight - 10 : y) + 'px';
+    const x=e.clientX+14, y=e.clientY-10;
+    tip.style.left=(x+tip.offsetWidth>window.innerWidth-10?e.clientX-tip.offsetWidth-10:x)+'px';
+    tip.style.top=(y+tip.offsetHeight>window.innerHeight-10?e.clientY-tip.offsetHeight-10:y)+'px';
   });
-
-  document.addEventListener('mouseout', e => {
-    if(e.target.closest && e.target.closest('rect[data-county]') && !e.relatedTarget?.closest('rect[data-county]'))
+  document.addEventListener('mouseout',e=>{
+    if(e.target.closest&&e.target.closest('rect[data-county]')&&!e.relatedTarget?.closest('rect[data-county]'))
       tip.classList.remove('visible');
-    if(!e.target.closest || !e.target.closest('rect[data-county]'))
+    if(!e.target.closest||!e.target.closest('rect[data-county]'))
       tip.classList.remove('visible');
   });
 }
@@ -1103,27 +1068,62 @@ function initMapTooltips() {
 // COUNTDOWN
 // ============================================================
 function renderCountdown() {
-  const target = new Date(D.meta.countdown_to);
-  const overlay = document.getElementById('countdown-overlay');
-  if (!overlay) return;
-
-  function tick() {
-    const now  = new Date();
-    const diff = target - now;
-    if (diff <= 0) {
-      overlay.style.display = 'none';
-      return;
-    }
-    const h  = Math.floor(diff / 3600000);
-    const m  = Math.floor((diff % 3600000) / 60000);
-    const s  = Math.floor((diff % 60000) / 1000);
-    const fmt = n => String(n).padStart(2,'0');
-    document.getElementById('cd-hours').textContent   = fmt(h);
-    document.getElementById('cd-minutes').textContent = fmt(m);
-    document.getElementById('cd-seconds').textContent = fmt(s);
+  const target=new Date(D.meta.countdown_to);
+  const overlay=document.getElementById('countdown-overlay');
+  if(!overlay) return;
+  function tick(){
+    const diff=target-new Date();
+    if(diff<=0){overlay.style.display='none';return;}
+    const h=Math.floor(diff/3600000);
+    const m=Math.floor((diff%3600000)/60000);
+    const s=Math.floor((diff%60000)/1000);
+    const fmt=n=>String(n).padStart(2,'0');
+    document.getElementById('cd-hours').textContent=fmt(h);
+    document.getElementById('cd-minutes').textContent=fmt(m);
+    document.getElementById('cd-seconds').textContent=fmt(s);
   }
   tick();
-  setInterval(tick, 1000);
+  setInterval(tick,1000);
+}
+
+// ============================================================
+// COUNTDOWN CANDIDATES (with party logos)
+// ============================================================
+function renderCountdownCandidates() {
+  const senEl=document.getElementById('cd-senate-list');
+  if(senEl&&D.senate&&D.senate.races){
+    let html='';
+    for(const race of D.senate.races){
+      html+=`<div class="cd-state-block">
+        <div class="cd-state-name">${STATE_FLAG[race.race_key.split('-')[0]]||''} ${race.state}</div>`;
+      for(const c of race.candidates){
+        html+=`<div class="cd-cand">
+          ${partyLogoImg(c.party)}
+          <span class="cd-cand-name">${c.name}</span>
+        </div>`;
+      }
+      html+=`</div>`;
+    }
+    senEl.innerHTML=html;
+  }
+  const govEl=document.getElementById('cd-gov-list');
+  if(govEl){
+    let html='';
+    for(const code of GOV_STATES){
+      const race=D.races[code+'-gov'];
+      if(!race) continue;
+      html+=`<div class="cd-state-block">
+        <div class="cd-state-name">${STATE_FLAG[code]||''} ${STATE_NAMES[code]||code}</div>`;
+      for(const c of race.candidates){
+        html+=`<div class="cd-cand">
+          ${partyLogoImg(c.party)}
+          <span class="cd-cand-name">${c.name}</span>
+        </div>`;
+      }
+      html+=`</div>`;
+    }
+    govEl.innerHTML=html;
+  }
 }
 
 // ============================================================
@@ -1132,76 +1132,28 @@ function renderCountdown() {
 window.addEventListener('DOMContentLoaded', async () => {
   await loadData();
 
-  // Meta
-  document.title = D.meta.title || 'NBC News | Decision 1994';
-  const dateEl = document.getElementById('dec-date-label');
-  if(dateEl) dateEl.textContent = (D.meta.date||'').toUpperCase();
-  const dateEl2 = document.getElementById('elections-date');
-  if(dateEl2) dateEl2.textContent = (D.meta.date||'8 DE NOV. DE 1994').toUpperCase();
+  document.title=D.meta.title||'NBC News | Decision 1994';
+  const dateEl=document.getElementById('dec-date-label');
+  if(dateEl) dateEl.textContent=(D.meta.date||'').toUpperCase();
+  const dateEl2=document.getElementById('elections-date');
+  if(dateEl2) dateEl2.textContent=(D.meta.date||'8 DE NOV. DE 1994').toUpperCase();
 
-  // Pre-election countdown mode
-  if (D.meta.status === 'pre_election') {
-    const overlay = document.getElementById('countdown-overlay');
-    if (overlay) {
-      overlay.style.display = 'flex';
-      // Populate candidate lists
+  if(D.meta.status==='pre_election'){
+    const overlay=document.getElementById('countdown-overlay');
+    if(overlay){
+      overlay.style.display='block';
       renderCountdownCandidates();
     }
     renderCountdown();
   }
 
-  // Render all sections
   renderHome();
   renderGovPanel();
   renderGovernorsOverview();
   renderSenate();
   renderBlog();
-
-  // Tooltips
   initMapTooltips();
 });
-
-// ============================================================
-// COUNTDOWN CANDIDATE LIST
-// ============================================================
-function renderCountdownCandidates() {
-  const partyIcon = p => p==='r'
-    ? '<span class="cd-icon cd-r">🐘</span>'
-    : p==='d' ? '<span class="cd-icon cd-d">🫏</span>'
-    : '<span class="cd-icon cd-i">⚪</span>';
-
-  // Senadores
-  const senEl = document.getElementById('cd-senate-list');
-  if (senEl && D.senate && D.senate.races) {
-    let html = '';
-    for (const race of D.senate.races) {
-      html += `<div class="cd-state-block">
-        <div class="cd-state-name">${STATE_FLAG[race.race_key.split('-')[0]]||''} ${race.state}</div>`;
-      for (const c of race.candidates) {
-        html += `<div class="cd-cand">${partyIcon(c.party)} <span>${c.name.charAt(0)+c.name.slice(1).toLowerCase()}</span></div>`;
-      }
-      html += `</div>`;
-    }
-    senEl.innerHTML = html;
-  }
-
-  // Governadores
-  const govEl = document.getElementById('cd-gov-list');
-  if (govEl) {
-    let html = '';
-    for (const code of (GOV_STATES)) {
-      const race = D.races[code+'-gov'];
-      if (!race) continue;
-      html += `<div class="cd-state-block">
-        <div class="cd-state-name">${STATE_FLAG[code]||''} ${STATE_NAMES[code]||code}</div>`;
-      for (const c of race.candidates) {
-        html += `<div class="cd-cand">${partyIcon(c.party)} <span>${c.name.charAt(0)+c.name.slice(1).toLowerCase()}</span></div>`;
-      }
-      html += `</div>`;
-    }
-    govEl.innerHTML = html;
-  }
-}
 </script>
 </body>
 </html>
