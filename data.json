@@ -30,7 +30,7 @@
           "party": "d",
           "pct": 0,
           "votes": 0,
-          "winner": true
+          "winner": false
         },
         {
           "name": "",
@@ -59,14 +59,14 @@
       "total_votes": 0,
       "candidates": [
         {
-          "name": "",
-          "party": "d",
+          "name": "Tom Holloway",
+          "party": "r",
           "pct": 0,
           "votes": 0,
           "winner": false
         },
         {
-          "name": "",
+          "name": "Joe Biden",
           "party": "d",
           "pct": 0,
           "votes": 0,
