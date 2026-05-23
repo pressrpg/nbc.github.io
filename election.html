@@ -234,9 +234,70 @@ body{font-family:'Libre Franklin',sans-serif;color:var(--text);background:#fff;f
   .home-grid{grid-template-columns:1fr}
   .decision-nav{display:none}
 }
+
+/* ===== COUNTDOWN OVERLAY ===== */
+#countdown-overlay{
+  display:none;position:fixed;inset:0;z-index:9000;
+  background:linear-gradient(160deg,#04091d 0%,#0b1a3e 60%,#1a0a0a 100%);
+  flex-direction:column;align-items:center;justify-content:center;
+  padding:24px;overflow-y:auto;
+}
+.cd-logo{font-family:'Libre Franklin',sans-serif;font-size:11px;font-weight:800;
+  letter-spacing:3px;color:#888;text-transform:uppercase;margin-bottom:8px}
+.cd-title{font-family:'Playfair Display',serif;font-size:clamp(28px,5vw,52px);
+  font-weight:900;color:#fff;text-align:center;line-height:1.15;margin-bottom:6px}
+.cd-subtitle{font-size:13px;color:#7a9cc4;text-align:center;max-width:520px;
+  line-height:1.6;margin-bottom:36px}
+.cd-clock{display:flex;gap:0;margin-bottom:40px;border:1px solid #1e2d50;background:#080f22}
+.cd-unit{display:flex;flex-direction:column;align-items:center;padding:20px 32px;
+  border-right:1px solid #1e2d50}
+.cd-unit:last-child{border-right:none}
+.cd-digit{font-size:clamp(42px,8vw,72px);font-weight:900;color:var(--gold);
+  font-variant-numeric:tabular-nums;line-height:1}
+.cd-label{font-size:9px;font-weight:700;letter-spacing:2px;color:#445;
+  text-transform:uppercase;margin-top:4px}
+.cd-sep{font-size:48px;font-weight:900;color:#1e2d50;align-self:center;
+  padding:0 4px;line-height:1}
+.cd-cols{display:grid;grid-template-columns:1fr 1fr;gap:32px;width:100%;max-width:700px}
+.cd-section-title{font-size:10px;font-weight:800;letter-spacing:2px;color:var(--gold);
+  text-transform:uppercase;margin-bottom:12px;padding-bottom:6px;
+  border-bottom:1px solid #1e2d50}
+.cd-state-block{margin-bottom:14px}
+.cd-state-name{font-size:12px;font-weight:700;color:#8ab0d8;margin-bottom:5px}
+.cd-cand{display:flex;align-items:center;gap:7px;font-size:12px;color:#ccc;
+  padding:3px 0;border-bottom:1px solid #0d1830}
+.cd-icon{font-size:14px;line-height:1}
+.cd-r{color:#e05050}.cd-d{color:#4a8fee}.cd-i{color:#aaa}
+.cd-message{margin-top:36px;font-size:12px;color:#3a5070;text-align:center;
+  max-width:480px;line-height:1.6;font-style:italic}
 </style>
 </head>
 <body>
+
+<!-- ===== COUNTDOWN OVERLAY ===== -->
+<div id="countdown-overlay">
+  <div class="cd-logo">NBC News · Decision 1994</div>
+  <div class="cd-title">A apuração começa em:</div>
+  <div class="cd-subtitle">Acompanhe ao vivo a cobertura das eleições de meio de mandato.<br>Os resultados chegam amanhã às 18h.</div>
+  <div class="cd-clock">
+    <div class="cd-unit"><div class="cd-digit" id="cd-hours">00</div><div class="cd-label">horas</div></div>
+    <div class="cd-sep">:</div>
+    <div class="cd-unit"><div class="cd-digit" id="cd-minutes">00</div><div class="cd-label">minutos</div></div>
+    <div class="cd-sep">:</div>
+    <div class="cd-unit"><div class="cd-digit" id="cd-seconds">00</div><div class="cd-label">segundos</div></div>
+  </div>
+  <div class="cd-cols">
+    <div>
+      <div class="cd-section-title">🏛 Senadores em disputa</div>
+      <div id="cd-senate-list">carregando…</div>
+    </div>
+    <div>
+      <div class="cd-section-title">🏛 Governadores em disputa</div>
+      <div id="cd-gov-list">carregando…</div>
+    </div>
+  </div>
+  <div class="cd-message">Os resultados serão exibidos automaticamente quando a apuração começar.</div>
+</div>
 
 <!-- YEAR BAR -->
 <div id="year-bar">
@@ -382,7 +443,7 @@ let TABLE_LIMITS = {};
 // LOAD JSON
 // ============================================================
 async function loadData() {
-  const r = await fetch('decision1994.json');
+  const r = await fetch('https://raw.githubusercontent.com/pressrpg/nbc.github.io/refs/heads/main/data.json');
   D = await r.json();
   // Hydrate config from JSON
   const cfg = D.config || {};
@@ -1004,6 +1065,33 @@ function initMapTooltips() {
 }
 
 // ============================================================
+// COUNTDOWN
+// ============================================================
+function renderCountdown() {
+  const target = new Date(D.meta.countdown_to);
+  const overlay = document.getElementById('countdown-overlay');
+  if (!overlay) return;
+
+  function tick() {
+    const now  = new Date();
+    const diff = target - now;
+    if (diff <= 0) {
+      overlay.style.display = 'none';
+      return;
+    }
+    const h  = Math.floor(diff / 3600000);
+    const m  = Math.floor((diff % 3600000) / 60000);
+    const s  = Math.floor((diff % 60000) / 1000);
+    const fmt = n => String(n).padStart(2,'0');
+    document.getElementById('cd-hours').textContent   = fmt(h);
+    document.getElementById('cd-minutes').textContent = fmt(m);
+    document.getElementById('cd-seconds').textContent = fmt(s);
+  }
+  tick();
+  setInterval(tick, 1000);
+}
+
+// ============================================================
 // INIT
 // ============================================================
 window.addEventListener('DOMContentLoaded', async () => {
@@ -1016,6 +1104,17 @@ window.addEventListener('DOMContentLoaded', async () => {
   const dateEl2 = document.getElementById('elections-date');
   if(dateEl2) dateEl2.textContent = (D.meta.date||'8 DE NOV. DE 1994').toUpperCase();
 
+  // Pre-election countdown mode
+  if (D.meta.status === 'pre_election') {
+    const overlay = document.getElementById('countdown-overlay');
+    if (overlay) {
+      overlay.style.display = 'flex';
+      // Populate candidate lists
+      renderCountdownCandidates();
+    }
+    renderCountdown();
+  }
+
   // Render all sections
   renderHome();
   renderGovPanel();
@@ -1026,6 +1125,48 @@ window.addEventListener('DOMContentLoaded', async () => {
   // Tooltips
   initMapTooltips();
 });
+
+// ============================================================
+// COUNTDOWN CANDIDATE LIST
+// ============================================================
+function renderCountdownCandidates() {
+  const partyIcon = p => p==='r'
+    ? '<span class="cd-icon cd-r">🐘</span>'
+    : p==='d' ? '<span class="cd-icon cd-d">🫏</span>'
+    : '<span class="cd-icon cd-i">⚪</span>';
+
+  // Senadores
+  const senEl = document.getElementById('cd-senate-list');
+  if (senEl && D.senate && D.senate.races) {
+    let html = '';
+    for (const race of D.senate.races) {
+      html += `<div class="cd-state-block">
+        <div class="cd-state-name">${D.config.state_flags[race.race_key.split('-')[0]]||''} ${race.state}</div>`;
+      for (const c of race.candidates) {
+        html += `<div class="cd-cand">${partyIcon(c.party)} <span>${c.name.charAt(0)+c.name.slice(1).toLowerCase()}</span></div>`;
+      }
+      html += `</div>`;
+    }
+    senEl.innerHTML = html;
+  }
+
+  // Governadores
+  const govEl = document.getElementById('cd-gov-list');
+  if (govEl) {
+    let html = '';
+    for (const code of (D.config.gov_states||[])) {
+      const race = D.races[code+'-gov'];
+      if (!race) continue;
+      html += `<div class="cd-state-block">
+        <div class="cd-state-name">${D.config.state_flags[code]||''} ${D.config.state_names[code]||code}</div>`;
+      for (const c of race.candidates) {
+        html += `<div class="cd-cand">${partyIcon(c.party)} <span>${c.name.charAt(0)+c.name.slice(1).toLowerCase()}</span></div>`;
+      }
+      html += `</div>`;
+    }
+    govEl.innerHTML = html;
+  }
+}
 </script>
 </body>
 </html>
